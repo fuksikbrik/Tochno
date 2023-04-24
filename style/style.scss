@@ -1,0 +1,1929 @@
+body{
+    padding: 0;
+    margin: 0;
+      
+
+      img{
+        width: 100%;
+        height: auto;
+      }
+      
+                  
+}
+
+@font-face {
+    font-weight: 400; 
+    font-family:'Golos Text';
+    src: url("../font/GolosText-400.ttf");
+  }
+
+  @font-face {
+    font-weight: 500; 
+    font-family:'Golos Text';
+    src: url("../font/GolosText-500.ttf");
+  }
+
+  @font-face {
+    font-weight: 600; 
+    font-family:'Golos Text';
+    src: url("../font/GolosText-600.ttf");
+  }
+
+  @font-face {
+    font-weight: 700; 
+    font-family:'Golos Text';
+    src: url("../font/GolosText-700.ttf");
+  }
+  @font-face {
+    font-weight:800; 
+    font-family:'Golos Text';
+    src: url("../font/GolosText-800.ttf");
+  }
+
+  @font-face {
+    font-weight:900; 
+    font-family:'Golos Text';
+    src: url("../font/GolosText-900.ttf");
+  }
+.number{
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 135%;
+    color: #FFFFFF;
+    opacity: 0.42;
+    margin: 0;
+    margin-right: 19px;
+}
+h1{
+    margin: 0;
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 135%;
+    color: #FFFFFF;
+}
+.content{
+    background-color:  #363636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .wrapper{
+        padding: 21px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        max-width: 1070px;
+        
+    }
+}
+.header-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px ;
+    margin-bottom: 22px;
+    .header-logo-and-addres{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-text{
+            margin: 0;
+            color: white;
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 135%;
+            opacity: 0.5;
+        }
+        .header-logo{
+            margin-right: 20px;
+        }
+    }
+    .header-number-menu{
+        display: flex;
+        align-items: center;
+        .header-menu{
+            width: 36px;
+            height: 36px;
+            border: 1px solid white;
+            background-color: rgba($color: #000000, $alpha: 0);
+            border-radius: 100%;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.3s;
+            
+            .line-menu-1{
+                border: 1px solid white;
+                width: 16px;
+                margin-top: 12px;
+            }
+            .line-menu-2{
+                border: 1px solid white;
+                width: 16px;
+                margin-top: 3px;
+            }
+            .line-menu-3{
+                border: 1px solid white;
+                width: 16px;
+                margin-top: 3px;
+
+            }
+        }
+        .active-menu{
+                .line-menu-2{
+                    border: none;
+                }
+                .line-menu-1{
+                    transform: rotate(135deg);
+                    position: absolute;
+                    margin-top: 17px;
+                }
+                .line-menu-3{
+                    transform: rotate(45deg);
+                    position: absolute;
+                    margin-top: 17px;
+                }
+            }
+        .header-number{
+            color: white;
+            text-decoration: none;
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 135%;
+            .line-menu{
+                color: white;
+                border: 1px solid white;
+            }
+        }
+        .header-button{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            border: 1px solid #FFFFFF;
+            border-radius: 72px;
+            width: 164px;
+            height: 36px;
+            background-color: rgba($color: #000000, $alpha: 0);
+            color: white;
+            margin-left: 15px;
+        }
+    }
+}
+
+.header-menu-block{
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding: 72px 80px 41px 80px;
+    position: absolute;
+    top: 100px;
+    max-width: 910px;
+    height: 257px;
+    transition: 0.5s;
+    width: -webkit-fill-available;
+    
+    .header-menu-block-line-1{
+        display: flex;
+        margin-bottom: 33px;
+        gap: 80px;
+        .block-menu-1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .header-menu-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 135%;
+                text-transform: uppercase;
+                color: #212121;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+            .header-menu-title:hover{
+                color: #7939FF;
+            }
+        }
+        .block-menu-2{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .header-menu-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 135%;
+                text-transform: uppercase;
+                color: #212121;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+            .header-menu-title:hover{
+                color: #7939FF;
+            }
+        }
+    }
+    
+    
+    .block-menu-3{
+        display: flex;
+        justify-content: end;
+        .block-menu-3-social-icon{
+            display: flex;
+            gap: 20px;
+            a{
+                .instagram-fix{
+                    opacity: 0.5;
+                }
+            }
+        }
+        
+    }
+}
+.disabled{
+    display: none;
+
+}
+.header-page{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    .header-block-white{
+        background-color: white;
+        border-radius: 50px;
+        padding: 78px 0px 62px 80px ;
+        margin-bottom: 10px;
+        p{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 135%;
+            color: #484848;
+            width: 60%;
+        }
+        img{
+            max-width: 630px;
+        }
+    }
+    .header-block-purple{
+        background: #7939FF;
+        border-radius: 50px;
+        padding: 48px 0px 48px 80px;
+        .block-purple-line-card{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            .line-card{
+                padding: 9px 20px;
+                background-color: white;
+                border-radius: 10px;
+                width: fit-content;
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 135%;
+                color: #BBBBBB;
+                .purple{
+                    color: #7939FF;
+                }
+                .red{
+                    color: #DF362C;
+                }
+                .yelow{
+                    color: #FFA216;
+                }
+                .black{
+                    color: #212121;
+                }
+                .blue{
+                    color: #14BDBD;
+                }
+            }
+            
+        }
+    }
+}
+.block-01{
+    .block-title{
+        display: flex;
+        justify-content: start;
+        .number{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 135%;
+                color: #FFFFFF;
+                opacity: 0.42;
+                margin-right: 19px;
+        }
+        h1{
+            margin: 0;
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 135%;
+            color: #FFFFFF;
+        }
+        p{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 135%;
+            color: #BFBFBF;
+            margin: 0;  
+            margin-bottom: 57px;
+        }
+    }
+    .block-of-cards{
+        display: flex;
+        gap: 0px 10px;
+        .card{
+            background: #FFFFFF;
+            border-radius: 50px;
+            width: -webkit-fill-available;
+            .card-text{
+                padding: 30px 40px 0px 30px;
+                .step{
+                width: 85px;
+                height: 38px;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 135%;
+                    color: #8E8E8E;
+                }
+            }
+            .card-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 135%;
+                color: #212121;
+                margin: 29px 0px 20px 0px ;
+            }
+            .card-sub-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                color: #333333;
+            }
+            }
+           
+        }
+        .card-image-1{
+            padding: 0px 10px 10px 10px;
+            max-width: 330px;
+        }
+        .card-image-3{
+            max-width: 109px;
+            margin:auto 0 ;
+
+        }
+        .card-2{
+            background-image: url(../img/card-2.png);
+            background-repeat: no-repeat no-repeat;
+            background-size: 100% 100%;
+            width: -webkit-fill-available;
+            .card-text{
+                padding: 30px 40px 0px 30px;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 135%;
+                    color: #8E8E8E;
+                }
+                .step{
+                    width: 85px;
+                    height: 38px;
+                    background-color: white;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .card-title{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 135%;
+                    color: white;
+                    margin: 29px 0px 20px 0px ;
+                }
+                .card-sub-title{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: white;
+                }
+            }
+        }
+        .card-3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.block-yelow{
+    background-color: #FFA216;
+    border-radius: 50px;
+    margin: 75px 0px 100px 0px ;
+    padding: 65px 0px 65px 80px ;
+    display: flex;
+    justify-content: space-between;
+    .customer-call{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        border-radius: 20px;
+        background-color: white;
+        padding: 32px 30px 34px 30px;
+        h1{
+            width: 50%;
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 135%;
+            color: #FFA216;
+           
+        }
+        button{
+            border: 0;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    .block-yelow-men{
+
+    }
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.slider-7{
+    margin-bottom: 100px;
+    overflow: hidden;
+    .swiper-wrapper{
+        max-width: 1070px;
+        
+        .swiper-slide{
+            background-image: url(../img/slide-7-1.png);
+            background-position: right;
+            width: 100%;
+            height: 549px;
+            background-repeat: no-repeat no-repeat;
+            display: flex;
+            justify-content: space-between;
+            .slide-7-left{
+                .slide-7-number-and-title{
+                    display: flex;
+                    margin-top: 55px;
+                    margin-bottom: 100px;
+    
+                    .number{
+                        font-family: 'Golos Text';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 64px;
+                        line-height: 135%;
+                        color: #FFFFFF;
+                        opacity: 0.42;
+                       
+                    }
+                    .title-and-sub-title{
+                        .title{
+                            font-family: 'Golos Text';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 64px;
+                            line-height: 68px;
+                            color: #FFFFFF;
+                            margin: 0;
+                            margin-top: 10px;
+                        }
+                        .sub-title{
+                            font-family: 'Golos Text';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 135%;
+                            text-transform: uppercase;
+                            color: #BFBFBF;
+                            margin: 0;
+                        }
+                    }
+                }
+                .slide-7-coment{
+                    background: #FFFFFF;
+                    border-radius: 20px;
+                    max-width: 360px;
+                    padding: 22px 20px 22px 30px;
+                    p{
+                        font-family: 'Golos Text';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 135%;
+                        color: #212121;
+                    }
+                }
+                
+            }
+            .slide-7-right{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                
+                .slider-7-navigation{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 90px;
+                    padding: 0px 30px 30px 0px;
+                    .swiper-button-prev{
+                        position: static !important;
+                    }
+                    .swiper-button-prev::after{
+                        content: url(../img/slider-1-prev.png);
+                    }
+                    .swiper-button-next{
+                        position: static !important;
+                    }
+                    .swiper-button-next::after{
+                        content: url(../img/slider-1-next.png);
+                    }
+                }
+                
+            }
+           
+        }
+        .disabled{
+            display: none;
+        }
+    }
+}
+
+
+
+.block-03{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 100px;
+    .block-03-one{
+        background: #14BDBD;
+        border-radius: 30px;
+        padding: 28px 0px 32px 20px ;
+        display: flex;
+        max-width: 780px;
+        width: -webkit-fill-available;
+        max-height: 260px;
+        .number{
+            p{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 135%;
+                color: #FFFFFF;
+                opacity: 0.42;
+                margin: 0;
+            }
+        }
+        .title-and-sub-title{
+            .title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 64px;
+                line-height: 77px;
+                color: #FFFFFF; 
+                margin: 0; 
+                margin-top: 5px;
+                margin-bottom: 20px;              
+            }
+            .sub-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                color: #FFFFFF;
+                opacity: 0.7;
+                margin: 0;
+            }
+        }
+    }
+    .block-03-thwo{
+        background: #FFFFFF;
+        border-radius: 30px;
+        padding: 30px 0px 30px 30px;
+        max-width: 230px;
+        width: -webkit-fill-available;
+        max-height: 260px;
+        img{
+            max-width: 140px;
+        }
+        p{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 135%;
+            color: #212121;
+        }
+    }
+    .block-03-three{
+        border-radius: 30px;
+        padding: 76px 0px 0px 50px;
+        background-image: url(../img/block-3-3.png);
+        background-repeat: no-repeat no-repeat;
+        max-width: 480px;
+        height: 454px;
+        width: -webkit-fill-available;
+        p{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 135%;
+            color: #FFFFFF;
+        }
+    }
+    .line-2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 530px;
+        .block-03-four{
+            border-radius: 30px;
+            padding: 0px 0px 30px 30px ;
+            background-image: url(../img/block-3-4.png);
+            background-repeat: no-repeat no-repeat;
+            max-height: 230px;
+            max-width: 530px;
+            height: 260px;
+            width: -webkit-fill-available;
+            p{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 135%;
+                color: #FFFFFF;
+            }
+        }
+        .block-03-five{
+            border-radius: 30px;
+            background: #FFFFFF;
+            padding: 30px 0px 30px 30px ;
+            width: -webkit-fill-available;
+            max-width: 230px;
+            max-height: 200px;
+            
+            p{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 135%;
+                color: #212121;
+            }
+            img{
+                max-width: 101px;
+            }
+        }
+        .block-03-six{
+            border-radius: 30px;
+            padding: 0px 30px 50px 30px;
+            background-image: url(../img/block-3-6.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat no-repeat;
+            width: -webkit-fill-available;
+            height: 210px;
+            max-width: 200px;
+            p{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 135%;
+                color: #FFFFFF;
+            }
+            
+        }
+    }
+    
+}
+
+
+
+
+.block-04{
+    .block-04-number-and-title{
+       display: flex;
+       justify-content: start;
+       margin-bottom: 33px;
+       .title{
+        font-family: 'Golos Text';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 135%;
+        color: #FFFFFF;
+        margin: 0;
+       }
+       .sub-title{
+        font-family: 'Golos Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        color: #BFBFBF;
+        margin:0;
+       }
+    }
+
+    .block-04-card-quiz{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 100px;
+        .card-quiz-answer{
+            max-width: 300px;
+            max-height: 248px;
+            background-color: white;
+            border-radius: 30px;
+            height: 350px;
+            width: -webkit-fill-available;
+            padding: 30px 20px 20px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.7s;
+            .quiz{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 135%;
+                color: #212121;
+                margin: 0;
+            }
+            .answer{
+                display: none;
+                margin: 0;
+            }
+            .card-quiz-arrow-and-number{
+                display: flex;
+                justify-content: space-between;
+                .number-quiz{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 135%; 
+                    color: #212121;
+                    opacity: 0.3;
+                    margin: 0;
+                }
+                .arrow-quiz{
+                    max-width: 30px;
+                    transition: 0.7s;
+                }
+            }
+        }
+        .active{
+            background: #FFA216;
+            .quiz{
+                font-size: 12px;
+                color: #FFFFFF;
+                opacity: 0.5;
+                margin-bottom: 15px;
+            }
+            .answer{
+                display: block;
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FFFFFF;
+            }
+            .arrow-quiz{
+                transform: rotate(-180deg);
+                svg{
+                    path{
+                        fill: white;
+                    }
+                }
+            }
+            .number-quiz{
+                color: #FFFFFF !important;
+            }
+        }
+
+        .card-quiz-answer-six{
+            max-width: 350px;
+            max-height: 298px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+         
+            p{
+                padding: 30px 0px 0px 30px;
+                margin: 0;
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FFFFFF;                
+            }
+            button{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                text-align: center;
+                color: #FFFFFF;
+                background: #7939FF;
+                border-radius: 30px;
+                width: -webkit-fill-available;
+                max-width: 350px;
+                max-height: 80px;
+                height: 80px;
+                border: 0;
+                
+            }
+        }
+    }
+
+    .block-04-slider{
+        .block-04-slider-title{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 135%;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0px 0px 0px 90px;
+            margin-bottom: 43px;
+        }
+        .slider-1{
+            margin-bottom: 10px;
+            max-height: 570px;
+            overflow: hidden;
+
+            .swiper-wrapper{
+                .slider-1-navigation{
+                    display: flex;
+                    justify-content: end;
+                    div{
+                        width: 110px;
+                        display: flex;
+                        justify-content: space-between;
+                       
+                        .swiper-button-prev-1{
+                            width: 50px;
+                        }
+                        .swiper-button-next-1::after{
+                           
+                            content: url(../img/slider-1-next.png);
+                           
+                        }
+                        .swiper-button-next-1{
+                            width: 50px;
+                        }
+                        .swiper-button-prev-1::after{
+                            
+                            content: url(../img/slider-1-prev.png);
+                        }
+                    }
+                    
+                }
+                .swiper-slide{
+                    background-image: url(../img/slider-1-1.png);
+                    background-repeat: no-repeat no-repeat;
+                    background-size: 100% auto;
+                    border-radius: 50px;
+                    max-width: 950px;
+                    height: 490px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 50px 30px 30px 90px;
+                    .slide-01-left{
+                        width: 60%;
+                        .name-object{
+                            font-family: 'Golos Text';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 24px;
+                            line-height: 120%;
+                            color: #FFFFFF;
+                            margin: 0;
+                            margin-bottom: 10px;
+                        }
+                        .addres-object{
+                            font-family: 'Golos Text';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 120%;
+                            color: #FFFFFF;
+                            opacity: 0.6;
+                            margin: 0;
+                            margin-bottom: 72px;
+                        }
+                        .title-object{
+                            font-family: 'Golos Text';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 64px;
+                            line-height: 97%;
+                            color: #FFFFFF;
+                            margin: 0;
+                            margin-bottom: 52px;
+                        }
+                        .object-characteristic{
+                            display: flex;
+                            justify-content: space-between;
+                            max-width: 417px;
+                            .object-characteristic-card{
+                                display: flex;
+                                flex-direction: column;
+                                
+                                .card-title{
+                                    font-family: 'Golos Text';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 143.2%;
+                                    color: #FFFFFF;
+                                    opacity: 0.7;
+                                    margin: 0;
+                                    margin-bottom: 3px;
+                                }
+                                .card-sub-title{
+                                    font-family: 'Golos Text';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 143.2%;
+                                    color: #FFFFFF;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                    .slide-01-right{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        button{
+                            background: rgba(255, 255, 255, 0.01);
+                            border: 1px solid #FFFFFF;
+                            border-radius: 72px;
+                            font-family: 'Golos Text';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 135%;
+                            text-align: center;
+                            color: #FFFFFF;
+                            width: 200px;
+                            height: 58px;
+                        }
+                    }
+
+                }
+                .disabled{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.block-05{
+    background: #7939FF;
+    border-radius: 50px;
+    padding: 90px 90px 110px 90px;
+    margin-bottom: 100px;
+    .block-05-title-and-number{
+        display: flex;
+        justify-content: space-between;
+        .title{
+            margin: 0;
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 96px;
+            line-height: 97px;
+            color: #FFFFFF;
+        }
+        .number{
+            margin: 0;
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 229px;
+            line-height: 101.5%;
+            color: #FFFFFF;
+            opacity: 0.2;
+        }
+    }
+    .sub-title{
+        font-family: 'Golos Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        color: #FFFFFF;
+        opacity: 0.7;
+        margin-bottom: 60px;
+    }
+    .block-05-cards{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 90px;
+        .card-fixxed{
+            padding: 40px 30px 30px 30px !important;
+        }
+        .card{
+            max-width: 260px;
+            max-height: 330px;
+            background: #FFFFFF;
+            border-radius: 30px;
+            width: -webkit-fill-available;
+            padding: 40px 30px 30px 30px;
+            .card-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 135%;
+                color: #212121;  
+                margin: 0;
+            }
+            .card-sub-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 135%;
+                color: #909090;
+                margin: 10px 0px 0px 0px ;
+            }
+            .card-image-1{
+                max-width: 192px;
+                margin: 24px auto auto auto;
+            }
+            .card-image-2{
+                max-width: 229px;
+                margin: 30px 0px 0px 0px ;
+           
+            }
+            .card-image-3{
+                max-width: 189px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .block-05-accordeon-price{
+        display: flex;
+        gap: 10px;
+        .accordeon{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            .accordeon-item{
+                max-width:335px;
+                max-height: 27px;
+                padding: 18px 14px 18px 25px;
+                background: rgba($color: #ffffff, $alpha: 0.2);
+                border-radius: 20px;
+                width: -webkit-fill-available;
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 135%;
+                text-transform: uppercase;
+                color: white;
+                p{
+                    margin: 0;
+                }
+            }
+            .active{
+                background: white;
+                color: #212121;
+            }
+        }
+        .accordeon-answer{
+            max-width: 460px;
+            padding: 50px 0px 50px 60px;
+            background: #FFFFFF;
+            border-radius: 30px;
+            width: -webkit-fill-available;
+            .accordeon-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 135%;  
+                color: #212121;
+                margin: 0;
+                margin-bottom: 15px;
+            }
+            .disabled{
+                display: none;
+            }
+            .accordeon-sub-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 135%;
+                color: #7939FF;
+                margin: 0;
+                margin-bottom: 43px;
+            }
+            .accordeon-button{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                text-align: center;
+                color: #212121;
+                background: #FFFFFF;
+                border: 1px solid #212121;
+                border-radius: 20px;
+                width: -webkit-fill-available;
+                max-width: 270px;
+                height: -webkit-fill-avail;
+                height: 68px;
+            }
+           
+        }
+    }
+}
+.block-calculator{
+  
+    .title-and-sub-title{
+        padding: 0px 0px 43px 90px;
+
+        .title{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 101.5%;
+            color: #FFFFFF;
+            margin: 0;
+        }
+        .sub-title{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 135%;
+            color: #BFBFBF;
+            margin: 20px 0px 0px 0px ;
+        }
+    }
+    .calculator{
+        padding: 72px 85px 71px 75px;
+        background: #FFFFFF;
+        border-radius: 50px;
+        margin-bottom: 89px;
+        .calculator-title{
+            margin-bottom: 40px;
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 135%;
+            color: #212121;
+            text-align: center;
+        }
+        .quiz-cards{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            .card{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-height: 220px;
+                max-width: 220px;
+                background: #FFFFFF;
+                border: 1px solid #212121;
+                border-radius: 50px;
+                margin: auto;
+                width: -webkit-fill-available;
+                height: 220px;
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 135%;
+                text-align: center;
+                color: #212121;
+            }
+            .active{
+                background-color: #FFA216;
+            }
+        }
+        .quiz-btns{
+            display: flex;
+            justify-content: space-between;
+            .btn{
+                background: #FFFFFF;
+                border: 1px solid #212121;
+                border-radius: 72px;
+                width: 220px;
+                height: 80px;
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                text-align: center;
+                color: #212121;
+            }
+            
+        }
+    }
+}
+.block-06{
+    .title-and-sub-title{
+        padding: 0px 0px 43px 90px;
+        .title{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 68px;
+            color: #FFFFFF;
+            margin: 0px ;
+            margin-bottom: 10px;
+        }
+        .sub-title{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 135%;
+            text-transform: uppercase;
+            color: #BFBFBF;
+            margin: 0;
+            margin-bottom: 115px;
+        }
+    }
+    .block-folders{
+        display: flex;
+        gap: 10px;
+
+    }
+    .slider-2{
+        margin-bottom: 10px;
+        overflow: hidden;
+        .slider-2-navigation{
+            width: 110px;
+            display: flex;
+            justify-content: space-between;
+           
+            .swiper-button-prev-2::after{
+                content: url(../img/yelow-arrow-prev.png);
+            }
+            
+            .swiper-button-next-2::after{
+                content: url(../img/yelow-arrow-next.png);
+            }
+        }
+        .swiper-wrapper{
+            .swiper-slide{
+                background: #FFA216;
+                border-radius: 50px;
+                background-image: url(../img/white-star.png);
+                background-position: right;
+                background-repeat: no-repeat no-repeat;
+                height: 513px;
+                max-width: 890px;
+                padding: 80px 90px 57px 90px;
+                .slide-2-sub-title{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 135%;
+                    color: #FFFFFF;
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+                .slide-2-title{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 64px;
+                    line-height: 68px;
+                    color: #FFFFFF;
+                    margin: 0;
+                    margin-bottom: 63px;
+                }
+                .slide-2-coment{
+                    background: #FFFFFF;
+                    border: 1px solid #212121;
+                    border-radius: 30px;
+                    padding: 50px 0px 30px 50px;
+                    max-height: 170px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p{
+                        font-family: 'Golos Text';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 135%;
+                        color: #212121;
+                        width: 60%;
+                        
+                    }
+                }
+            }
+            .disabled{
+                display: none;
+            }
+        }
+    }
+    .block-call-of-size{
+        margin-bottom: 100px;
+        background: #FFFFFF;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 64px 0px 80px;
+        .call-of-size-left{
+            padding: 32px 30px 25px 30px;   
+            background: #7939FF;
+            border-radius: 20px;
+            max-width: 460px;
+            display: flex;
+            justify-content: space-between;
+            .call-of-size-left-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 135%;
+                color: #FFFFFF;
+                margin: 0;
+                
+            }
+            .call-of-size-left-button{
+                background: rgba($color: white, $alpha: 0.23);
+                border: 0;
+                border-radius: 100%;
+                
+            }
+        }
+        .call-of-size-right{
+            padding: 30px 0px 0px 0px;
+        }
+    }
+}
+.block-license-of-sertificate{
+    .block-title-and-sub-title{
+        padding: 0px 0px 0px 90px;
+        .sub-title{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 135%; 
+            color: #BFBFBF;  
+            margin: 0;     
+            margin-bottom: 10px;     
+        }
+        .title{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 68px;
+            color: #FFFFFF;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+    }
+    .licens-and-guarantee{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 100px;
+        .licens-block{
+            .licens-text{
+                background: #7939FF;
+                border-radius: 30px;
+                padding: 40px 200px 42px 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                max-width: 470px;
+                margin-bottom: 10px;
+                .licens-text-title{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 135%;
+                    color: #FFFFFF;
+                    margin: 0;
+                    margin-bottom: 24px;
+                }
+                .licens-text-sub-title{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #FFFFFF;
+                    margin: 0;
+                  
+                }
+    
+            }
+            .licens-cards{
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                .licens-card{
+                    background: #FFFFFF;
+                    border-radius: 30px;
+                    max-width: 230px;
+                    width: 100%;
+                    max-height: 136px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 38px 0px;
+                    img{
+                        width: 20px ;
+                        height: 20px;
+                        margin-bottom: 14px;
+                    }
+                    .licens-card-title{
+                        font-family: 'Golos Text';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 135%;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #212121;
+                        margin: 0;
+                    }
+                }
+    
+            }
+        }
+        
+        .guarantee{
+            max-width: 350px;
+            .guarantee-1{
+                background-color: white;
+                border-radius: 30px;
+                padding: 40px 0px 0px 40px;
+            }
+            .guarantee-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 135%;
+                color: #212121;
+            }
+            .guarantee-sub-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 135%;
+                color: #212121;
+            }
+            .guarantee-2{
+                padding: 0px 0px 0px 40px;
+                position: relative;
+                background: #DDDDDD;
+                border-radius: 30px;
+            }
+            .guarantee-3{
+                padding: 0px 0px 0px 40px;
+               
+                background: #C1C1C1;
+                border-radius: 30px;
+            }   
+        }
+    }
+}
+.slider-4{
+    margin-bottom: 50px;
+    overflow: hidden;
+    .title-and-arrow{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+        .slider-4-title{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 68px;
+            color: #FFFFFF;   
+            padding: 0px 0px 0px 90px; 
+            margin: 0;    
+        }
+        .slider-4-navigation{
+            div{
+                width: 110px;
+                display: flex;
+                justify-content: space-between;
+                .swiper-button-next-4{
+                    position: static !important;
+                    
+                    width: 50px;
+                    height: 50px;
+                    
+                }
+                .swiper-button-next-4::after{
+                    content: url(../img/slider-button-next.png);
+                    
+                }
+                .swiper-button-prev-4{
+                    position: static !important;
+                    
+                    width: 50px;
+                    height: 50px;
+                    transform: rotate(180deg);
+                }
+                .swiper-button-prev-4::after{
+                    content: url(../img/slider-button-next.png);
+                   
+                }
+            }
+        }
+    }
+    
+    .swiper-wrapper{
+        overflow: hidden;
+       
+        .swiper-slide{
+            max-width: 294px;
+            padding: 30px 26px 50px 30px;
+            background: #FFFFFF;
+            border-radius: 50px;
+            .slide-4-image{
+                max-width: 150px;
+            }
+            .slide-4-name{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 135%;
+                color: #212121;
+                margin: 0;
+                margin-bottom: 5px;
+            }
+            .slide-4-id{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                color: #212121;
+                opacity: 0.2;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            .slide-4-comment{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 135%;
+                color: #919191;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            .slide-4-next{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 135%;
+                text-decoration-line: underline;
+                color: #7939FF;
+                margin: 0;
+
+            }
+        }
+    }
+}
+.slider-5{
+    margin-bottom: 100px;
+    overflow: hidden;
+    .slider-5-navigation{
+        display: flex;
+        justify-content: end;
+        div{
+            width: 115px;
+            display: flex;
+            justify-content: space-between;
+            .swiper-button-next-5{
+                position: static !important;
+                
+                width: 50px;
+                height: 50px;
+            }
+            .swiper-button-next-5::after{
+                content: url(../img/slider-button-next.png);
+                
+            }
+            .swiper-button-prev-5{
+                position: static !important;
+                
+                width: 50px;
+                height: 50px;
+                transform: rotate(180deg);
+            }
+            .swiper-button-prev-5::after{
+                content: url(../img/slider-button-next.png);
+               
+            }
+        }
+        margin-bottom: 50px;
+    }
+    
+}
+.slider-6{
+    margin-bottom: 66px;
+    overflow: hidden;
+   
+    .swiper-wrapper{
+       
+        .swiper-slide{
+            background:  url(../img/slider-6-1.png);
+            background-repeat: no-repeat no-repeat;
+            height: 570px;
+            width: 100%;
+            border-radius: 75px;
+            background-position: right;
+            display: flex;
+            justify-content: space-between;
+            
+            .slide-6-left{
+                .slide-6-sub-title{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 106%;
+                    color: #BFBFBF;
+                    margin: 0;
+                    margin-top: 60px;
+                    margin-bottom: 12px;
+                }
+                .slide-6-title{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 48px;
+                    color: #FFFFFF;
+                    margin: 0;
+                    margin-bottom: 100px;
+                }
+                .slide-6-coment{
+                    
+                    background: #FFFFFF;
+                    padding: 22px 20px 22px 30px;
+                    border-radius: 20px;
+                    max-width: 427px;
+                    margin: 0px 0px 0px 23px;
+                    p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #212121;
+                    }
+                }
+            }
+            .slide-6-right{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding: 0px 30px 30px 0px;
+                .slider-6-navigation{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 110px;
+                    .swiper-button-prev-6{
+                        position: static;
+                    }
+                    .swiper-button-prev-6::after{
+                        content: url(../img/slider-6-arrow-prev.png);
+                    }
+                    .swiper-button-next-6{
+                        position: static;
+                    }
+                    .swiper-button-next-6::after{
+                        content: url(../img/slider-6-arrow-next.png);
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+.footer{
+    background: #7939FF;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 0px 41px 80px;
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+        .footer-logo{
+            max-width: 360px;
+            margin-bottom: 140px ;
+        }
+        .footer-number{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .footer-email{
+            font-family: 'Golos Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 135%;
+            color: #FFFFFF;
+            opacity: 0.5;
+            text-decoration: none;
+            margin-bottom: 88px;
+        }
+        .footer-social-icon{
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+            .footer-social-icon-image{
+                max-width: 30px;
+            }
+        }
+    }
+    .footer-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .footer-right-titls{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .footer-right-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 135%;
+                color: #FFFFFF;
+                margin: 0;  
+            }
+            
+        }
+        .footer-licens{
+            display: flex;
+            justify-content: start;
+            .footer-licens-sub-title{
+                font-family: 'Golos Text';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 135%;
+                color: #FFFFFF;
+                opacity: 0.5;
+                margin: 0px 20px 0px 0px ;
+            }
+        }
+        
+    }
+}
+.slider-test{
+    
+    .swiper-wrapper{
+            .slide{
+                background-color: black;
+                width: 350px;
+                height: 350px;
+            }
+    }
+}
