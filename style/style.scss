@@ -113,43 +113,7 @@ h1{
             background-color: rgba($color: #000000, $alpha: 0);
             border-radius: 100%;
             margin-left: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: 0.3s;
-            
-            .line-menu-1{
-                border: 1px solid white;
-                width: 16px;
-                margin-top: 12px;
-            }
-            .line-menu-2{
-                border: 1px solid white;
-                width: 16px;
-                margin-top: 3px;
-            }
-            .line-menu-3{
-                border: 1px solid white;
-                width: 16px;
-                margin-top: 3px;
-
-            }
         }
-        .active-menu{
-                .line-menu-2{
-                    border: none;
-                }
-                .line-menu-1{
-                    transform: rotate(135deg);
-                    position: absolute;
-                    margin-top: 17px;
-                }
-                .line-menu-3{
-                    transform: rotate(45deg);
-                    position: absolute;
-                    margin-top: 17px;
-                }
-            }
         .header-number{
             color: white;
             text-decoration: none;
@@ -186,8 +150,6 @@ h1{
     top: 100px;
     max-width: 910px;
     height: 257px;
-    transition: 0.5s;
-    width: -webkit-fill-available;
     
     .header-menu-block-line-1{
         display: flex;
@@ -249,10 +211,6 @@ h1{
         
     }
 }
-.disabled{
-    display: none;
-
-}
 .header-page{
     display: flex;
     flex-direction: column;
@@ -275,10 +233,19 @@ h1{
             max-width: 630px;
         }
     }
+    .girl-purple{
+        position: relative;
+        width: 450px;
+        height: 600px;
+        top: -352px;
+    }
     .header-block-purple{
         background: #7939FF;
         border-radius: 50px;
         padding: 48px 0px 48px 80px;
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
         .block-purple-line-card{
             width: 50%;
             display: flex;
@@ -454,6 +421,11 @@ h1{
         }
     }
 }
+.yelow-block-men img{
+        position: relative;
+        top: -114px;
+        height: 330px;
+        } 
 .block-yelow{
     background-color: #FFA216;
     border-radius: 50px;
@@ -461,6 +433,7 @@ h1{
     padding: 65px 0px 65px 80px ;
     display: flex;
     justify-content: space-between;
+    height: 150px;  
     .customer-call{
         display: flex;
         justify-content: space-between;
@@ -896,11 +869,6 @@ h1{
             }
             .arrow-quiz{
                 transform: rotate(-180deg);
-                svg{
-                    path{
-                        fill: white;
-                    }
-                }
             }
             .number-quiz{
                 color: #FFFFFF !important;
@@ -966,7 +934,7 @@ h1{
                     display: flex;
                     justify-content: end;
                     div{
-                        width: 110px;
+                        
                         display: flex;
                         justify-content: space-between;
                        
@@ -1221,9 +1189,6 @@ h1{
                 margin: 0;
                 margin-bottom: 15px;
             }
-            .disabled{
-                display: none;
-            }
             .accordeon-sub-title{
                 font-family: 'Golos Text';
                 font-style: normal;
@@ -1379,11 +1344,15 @@ h1{
             width: 110px;
             display: flex;
             justify-content: space-between;
-           
+            .swiper-button-prev-2{
+
+            }
             .swiper-button-prev-2::after{
                 content: url(../img/yelow-arrow-prev.png);
             }
-            
+            .swiper-button-next-2{
+
+            }
             .swiper-button-next-2::after{
                 content: url(../img/yelow-arrow-next.png);
             }
@@ -1754,7 +1723,9 @@ h1{
         }
         margin-bottom: 50px;
     }
-    
+    .swiper-wrapper{
+       
+    }
 }
 .slider-6{
     margin-bottom: 66px;
