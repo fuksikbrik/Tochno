@@ -114,6 +114,41 @@ h1{
             background-color: rgba($color: #000000, $alpha: 0);
             border-radius: 100%;
             margin-left: 10px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            transition: 0.5s;
+            .line-menu-1{
+                width: 16px;
+                border: 1px solid white;
+                margin-top: 12px;
+            }
+            .line-menu-2{
+                width: 16px;
+                border: 1px solid white;
+                margin-top: 3px;
+            }
+            .line-menu-3{
+                width: 16px;
+                border: 1px solid white;
+                margin-top: 3px;
+            }
+        }
+        .active-button-menu{
+            transition: 0.5s;
+            .line-menu-1{
+                transform: rotate(-45deg);
+                position: absolute;
+                margin-top: 17px;
+            }
+            .line-menu-2{
+                transform: rotate(45deg);
+                margin-top: 17px;
+            }
+            .line-menu-3{
+                display: none;
+            }
         }
         .header-number{
             color: white;
@@ -150,7 +185,10 @@ h1{
     position: absolute;
     top: 100px;
     max-width: 910px;
-    height: 257px;
+    height: 267px;
+    transition: 0.5s;
+    width: -webkit-fill-available;
+    z-index: 2;
     
     .header-menu-block-line-1{
         display: flex;
@@ -212,6 +250,12 @@ h1{
         
     }
 }
+.disabled{
+    display: none;
+    .header-page{
+        opacity: 0.7;
+    }
+}
 .header-page{
     display: flex;
     flex-direction: column;
@@ -239,6 +283,7 @@ h1{
         width: 450px;
         height: 600px;
         top: -352px;
+        left: 10px;
     }
     .header-block-purple{
         background: #7939FF;
@@ -252,6 +297,7 @@ h1{
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            max-height: 155px;
             .line-card{
                 padding: 9px 20px;
                 background-color: white;
@@ -263,8 +309,10 @@ h1{
                 font-size: 20px;
                 line-height: 135%;
                 color: #BBBBBB;
+                margin: 0;
                 .purple{
                     color: #7939FF;
+                    
                 }
                 .red{
                     color: #DF362C;
@@ -426,6 +474,7 @@ h1{
         position: relative;
         top: -114px;
         height: 330px;
+        right: 65px;
         } 
 .block-yelow{
     background-color: #FFA216;
@@ -871,9 +920,19 @@ h1{
                 line-height: 135%;
                 color: #FFFFFF;
             }
-            .arrow-quiz{
-                transform: rotate(-180deg);
+            .card-quiz-arrow-and-number{
+                .arrow-quiz{
+                    transform: rotate(-180deg);
+                    svg{
+                        path{
+                            fill: white;
+                        }
+                    }
+                  
+                   
+                }
             }
+            
             .number-quiz{
                 color: #FFFFFF !important;
             }
@@ -1199,7 +1258,13 @@ h1{
                 color: #212121;
                 margin: 0;
                 margin-bottom: 15px;
+                text-transform: uppercase;
+                display: none;
             }
+            .active{
+                display: block !important;
+            }
+            
             .accordeon-sub-title{
                 font-family: 'Golos Text';
                 font-style: normal;
@@ -1225,6 +1290,10 @@ h1{
                 max-width: 270px;
                 height: -webkit-fill-avail;
                 height: 68px;
+                transition: 0.3s;
+            }
+            .accordeon-button:hover{
+                background-color: rgb(230, 227, 227);
             }
            
         }
@@ -1450,7 +1519,7 @@ h1{
                 
             }
             .call-of-size-left-button{
-                background: rgba($color: white, $alpha: 0.23);
+                background: rgba($color: white, $alpha: 0);
                 border: 0;
                 border-radius: 100%;
                 
@@ -1562,7 +1631,11 @@ h1{
             .guarantee-1{
                 background-color: white;
                 border-radius: 30px;
-                padding: 40px 0px 0px 40px;
+                padding: 40px 28px 55px 40px;
+                position: absolute;
+                z-index: 3;
+                max-width: 282px;
+                max-height: 155px;
             }
             .guarantee-title{
                 font-family: 'Golos Text';
@@ -1571,6 +1644,7 @@ h1{
                 font-size: 24px;
                 line-height: 135%;
                 color: #212121;
+                margin-bottom: 79px;
             }
             .guarantee-sub-title{
                 font-family: 'Golos Text';
@@ -1579,18 +1653,37 @@ h1{
                 font-size: 16px;
                 line-height: 135%;
                 color: #212121;
+                max-width: 350px;
+                margin: 0;
             }
             .guarantee-2{
-                padding: 0px 0px 0px 40px;
+                padding: 0px 28px 53px 40px;
                 position: relative;
                 background: #DDDDDD;
                 border-radius: 30px;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                justify-content: end;
+                margin-top: 150px;
+                z-index: 2;
+                max-width: 282px;
+                max-height: 197px;
             }
             .guarantee-3{
-                padding: 0px 0px 0px 40px;
-               
+                padding: 0px 28px 43px 40px;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                position: absolute;
+                margin-top: 297px;
+                z-index: 1;
+                max-width: 282px;
                 background: #C1C1C1;
                 border-radius: 30px;
+                max-height: 207px;
             }   
         }
     }
@@ -1741,9 +1834,44 @@ h1{
 .slider-6{
     margin-bottom: 66px;
     overflow: hidden;
-   
+    .slider-6-navigation{
+       display: flex;
+       justify-content:space-between;
+       padding: 0px 30px 0px 0px;
+       position: absolute;
+       position: relative;
+       bottom: 80px;
+       z-index: 1;
+       .swiper-pagination-6{
+        padding: 0px 0px 0px 70px;
+        
+        .swiper-pagination-bullet{
+            border: 1px solid white;
+            background-color: white;
+        }
+       }
+        div{
+            width: 110px;
+            display: flex;
+            justify-content: space-between;
+            .swiper-button-prev-6{
+                position: static;
+            }
+            .swiper-button-prev-6::after{
+                content: url(../img/slider-6-arrow-prev.png);
+            }
+            .swiper-button-next-6{
+                position: static;
+            }
+            .swiper-button-next-6::after{
+                content: url(../img/slider-6-arrow-next.png);
+            }
+        }
+        
+    }
     .swiper-wrapper{
-       
+        
+        
         .swiper-slide{
             background:  url(../img/slider-6-1.png);
             background-repeat: no-repeat no-repeat;
@@ -1802,18 +1930,7 @@ h1{
                     display: flex;
                     justify-content: space-between;
                     width: 110px;
-                    .swiper-button-prev-6{
-                        position: static;
-                    }
-                    .swiper-button-prev-6::after{
-                        content: url(../img/slider-6-arrow-prev.png);
-                    }
-                    .swiper-button-next-6{
-                        position: static;
-                    }
-                    .swiper-button-next-6::after{
-                        content: url(../img/slider-6-arrow-next.png);
-                    }
+                    
                 }
             }
         }
@@ -1826,7 +1943,7 @@ h1{
     border-radius: 50px 50px 0px 0px;
     display: flex;
     justify-content: space-between;
-    padding: 52px 0px 41px 80px;
+    padding: 52px 80px 41px 80px;
     .footer-left{
         display: flex;
         flex-direction: column;
@@ -1879,8 +1996,12 @@ h1{
                 line-height: 135%;
                 color: #FFFFFF;
                 margin: 0;  
+                text-decoration: none;
+                transition: 0.5s;
             }
-            
+            .footer-right-title:hover{
+                color: rgb(151, 151, 151);
+            }
         }
         .footer-licens{
             display: flex;
