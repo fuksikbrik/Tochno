@@ -19,15 +19,15 @@ buttonMenu.addEventListener('click', function(){
 })
 
 
-quizCards.forEach((card) => {
-    card.addEventListener("click", (event) => {
+// quizCards.forEach((card) => {
+//     card.addEventListener("click", (event) => {
 	
-		quizCards.forEach((removeClass) => {
-			removeClass.classList.remove('active');
-		});
-	  card.classList.add('active')
-    });
-  });
+// 		quizCards.forEach((removeClass) => {
+// 			removeClass.classList.remove('active');
+// 		});
+// 	  card.classList.add('active')
+//     });
+//   });
 
 
 let tab = function () {

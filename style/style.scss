@@ -241,11 +241,28 @@ h1{
         .block-menu-3-social-icon{
             display: flex;
             gap: 20px;
-            a{
-                .instagram-fix{
-                    opacity: 0.5;
-                }
+            .header-inst{
+                opacity: 0.4;
+                transition: 0.5s;
             }
+            .header-telegram{
+                opacity: 0.4;
+                transition: 0.5s;
+            }
+            .header-vk{
+                opacity: 0.4;
+                transition: 0.5s;
+            }
+            .header-inst:hover{
+                        opacity: 1;
+            }
+            .header-telegram:hover{
+                        opacity: 1;   
+            }
+            .header-vk:hover{
+                        opacity: 1;
+            }
+            
         }
         
     }
@@ -890,7 +907,7 @@ h1{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: 0.7s;
+            transition: 0.5s;
             .quiz{
                 font-family: 'Golos Text';
                 font-style: normal;
@@ -923,7 +940,7 @@ h1{
                 }
             }
         }
-        .active{
+        .card-quiz-answer:hover{
             background: #FFA216;
             .quiz{
                 font-size: 12px;
@@ -1489,7 +1506,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;                    
@@ -1509,7 +1526,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;
@@ -1539,7 +1556,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;
@@ -1559,7 +1576,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;                    
@@ -1580,7 +1597,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;
@@ -1627,7 +1644,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;
@@ -1648,7 +1665,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;                    
@@ -1669,7 +1686,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;
@@ -1690,7 +1707,7 @@ h1{
                 p{
                     font-family: 'Golos Text';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 135%;
                     color: #000000;
@@ -1716,10 +1733,10 @@ h1{
     }
     .folder-1:hover{
         .folder-1-title-1{
-            top: -220px;
+            top: -240px;
         }
         .folder-1-title-2{
-            top: -130px;
+            top: -100px;
         }
     }
     .slider-2{
@@ -2159,29 +2176,74 @@ h1{
        
     }
 }
-.slider-6{
+
+
+
+
+
+.slider-6-block{
+    background:  url(../img/slider-6-1.png);
+    background-repeat: no-repeat no-repeat;
+    height: 570px;
+    width: 100%;
+    border-radius: 75px;
+    background-position: right;
     margin-bottom: 66px;
-    overflow: hidden;
-    .slider-6-navigation{
-       display: flex;
-       justify-content:space-between;
-       padding: 0px 30px 0px 0px;
-       position: absolute;
-       position: relative;
-       bottom: 80px;
-       z-index: 1;
-       .swiper-pagination-6{
-        padding: 0px 0px 0px 70px;
-        
+    .slide-6-sub-title{
+        font-family: 'Golos Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 106%;
+        color: #BFBFBF;
+        margin: 0;
+        margin-top: 60px;
+        margin-bottom: 12px;
+        }
+    .slide-6-title{
+        font-family: 'Golos Text';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 100px;
+         }
+        .slide-6-coment{
+        background: #FFFFFF;
+        padding: 22px 20px 22px 30px;
+        border-radius: 20px;
+        max-width: 427px;
+        margin: 0px 0px 0px 23px;
+        p{
+        font-family: 'Golos Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        color: #212121;
+        }
+    }
+    .slider-6{
+        overflow: hidden;
+        .slider-6-navigation{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .swiper-pagination-6{
+            padding: 0px 0px 0px 60px;
+        }
         .swiper-pagination-bullet{
             border: 1px solid white;
             background-color: white;
         }
-       }
-        div{
-            width: 110px;
+        .btns-navigation-6{
+            width: 140px;
             display: flex;
             justify-content: space-between;
+            padding: 0px 30px 0px 0px  ;
             .swiper-button-prev-6{
                 position: static;
             }
@@ -2195,77 +2257,146 @@ h1{
                 content: url(../img/slider-6-arrow-next.png);
             }
         }
-        
-    }
-    .swiper-wrapper{
-        
-        
-        .swiper-slide{
-            background:  url(../img/slider-6-1.png);
-            background-repeat: no-repeat no-repeat;
-            height: 570px;
-            width: 100%;
-            border-radius: 75px;
-            background-position: right;
-            display: flex;
-            justify-content: space-between;
-            
-            .slide-6-left{
-                .slide-6-sub-title{
-                    font-family: 'Golos Text';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 106%;
-                    color: #BFBFBF;
-                    margin: 0;
-                    margin-top: 60px;
-                    margin-bottom: 12px;
-                }
-                .slide-6-title{
-                    font-family: 'Golos Text';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 40px;
-                    line-height: 48px;
-                    color: #FFFFFF;
-                    margin: 0;
-                    margin-bottom: 100px;
-                }
-                .slide-6-coment{
-                    
-                    background: #FFFFFF;
-                    padding: 22px 20px 22px 30px;
-                    border-radius: 20px;
-                    max-width: 427px;
-                    margin: 0px 0px 0px 23px;
-                    p{
-                    font-family: 'Golos Text';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 135%;
-                    color: #212121;
-                    }
-                }
-            }
-            .slide-6-right{
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-                padding: 0px 30px 30px 0px;
-                .slider-6-navigation{
-                    display: flex;
-                    justify-content: space-between;
-                    width: 110px;
-                    
-                }
-            }
-        }
-        
-        
     }
 }
+
+
+
+
+
+
+
+
+   
+
+
+
+
+// .slider-6{
+//     margin-bottom: 66px;
+//     overflow: hidden;
+//     .slider-6-navigation{
+//        display: flex;
+//        justify-content:space-between;
+//        padding: 0px 30px 0px 0px;
+//        position: absolute;
+//        position: relative;
+//        bottom: 80px;
+//        z-index: 1;
+//        .swiper-pagination-6{
+//         padding: 0px 0px 0px 70px;
+        
+//         .swiper-pagination-bullet{
+//             border: 1px solid white;
+//             background-color: white;
+//         }
+//        }
+//         div{
+//             width: 110px;
+//             display: flex;
+//             justify-content: space-between;
+//             .swiper-button-prev-6{
+//                 position: static;
+//             }
+//             .swiper-button-prev-6::after{
+//                 content: url(../img/slider-6-arrow-prev.png);
+//             }
+//             .swiper-button-next-6{
+//                 position: static;
+//             }
+//             .swiper-button-next-6::after{
+//                 content: url(../img/slider-6-arrow-next.png);
+//             }
+//         }
+        
+//     }
+//     .swiper-wrapper{
+        
+        
+//         .swiper-slide{
+//             background:  url(../img/slider-6-1.png);
+//             background-repeat: no-repeat no-repeat;
+//             height: 570px;
+//             width: 100%;
+//             border-radius: 75px;
+//             background-position: right;
+//             display: flex;
+//             justify-content: space-between;
+            
+//             .slide-6-left{
+//                 .slide-6-sub-title{
+//                     font-family: 'Golos Text';
+//                     font-style: normal;
+//                     font-weight: 400;
+//                     font-size: 20px;
+//                     line-height: 106%;
+//                     color: #BFBFBF;
+//                     margin: 0;
+//                     margin-top: 60px;
+//                     margin-bottom: 12px;
+//                 }
+//                 .slide-6-title{
+//                     font-family: 'Golos Text';
+//                     font-style: normal;
+//                     font-weight: 600;
+//                     font-size: 40px;
+//                     line-height: 48px;
+//                     color: #FFFFFF;
+//                     margin: 0;
+//                     margin-bottom: 100px;
+//                 }
+//                 .slide-6-coment{
+                    
+//                     background: #FFFFFF;
+//                     padding: 22px 20px 22px 30px;
+//                     border-radius: 20px;
+//                     max-width: 427px;
+//                     margin: 0px 0px 0px 23px;
+//                     p{
+//                     font-family: 'Golos Text';
+//                     font-style: normal;
+//                     font-weight: 400;
+//                     font-size: 16px;
+//                     line-height: 135%;
+//                     color: #212121;
+//                     }
+//                 }
+//             }
+//             .slide-6-right{
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: end;
+//                 padding: 0px 30px 30px 0px;
+//                 .slider-6-navigation{
+//                     display: flex;
+//                     justify-content: space-between;
+//                     width: 110px;
+                    
+//                 }
+//             }
+//         }
+        
+        
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
     background: #7939FF;
     border-radius: 50px 50px 0px 0px;

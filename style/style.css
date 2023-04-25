@@ -233,8 +233,26 @@ h1 {
   display: flex;
   gap: 20px;
 }
-.header-menu-block .block-menu-3 .block-menu-3-social-icon a .instagram-fix {
-  opacity: 0.5;
+.header-menu-block .block-menu-3 .block-menu-3-social-icon .header-inst {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+.header-menu-block .block-menu-3 .block-menu-3-social-icon .header-telegram {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+.header-menu-block .block-menu-3 .block-menu-3-social-icon .header-vk {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+.header-menu-block .block-menu-3 .block-menu-3-social-icon .header-inst:hover {
+  opacity: 1;
+}
+.header-menu-block .block-menu-3 .block-menu-3-social-icon .header-telegram:hover {
+  opacity: 1;
+}
+.header-menu-block .block-menu-3 .block-menu-3-social-icon .header-vk:hover {
+  opacity: 1;
 }
 
 .disabled {
@@ -794,7 +812,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 .block-04 .block-04-card-quiz .card-quiz-answer .quiz {
   font-family: "Golos Text";
@@ -827,16 +845,16 @@ h1 {
   max-width: 30px;
   transition: 0.7s;
 }
-.block-04 .block-04-card-quiz .active {
+.block-04 .block-04-card-quiz .card-quiz-answer:hover {
   background: #FFA216;
 }
-.block-04 .block-04-card-quiz .active .quiz {
+.block-04 .block-04-card-quiz .card-quiz-answer:hover .quiz {
   font-size: 12px;
   color: #FFFFFF;
   opacity: 0.5;
   margin-bottom: 15px;
 }
-.block-04 .block-04-card-quiz .active .answer {
+.block-04 .block-04-card-quiz .card-quiz-answer:hover .answer {
   display: block;
   font-family: "Golos Text";
   font-style: normal;
@@ -845,13 +863,13 @@ h1 {
   line-height: 135%;
   color: #FFFFFF;
 }
-.block-04 .block-04-card-quiz .active .card-quiz-arrow-and-number .arrow-quiz {
+.block-04 .block-04-card-quiz .card-quiz-answer:hover .card-quiz-arrow-and-number .arrow-quiz {
   transform: rotate(-180deg);
 }
-.block-04 .block-04-card-quiz .active .card-quiz-arrow-and-number .arrow-quiz svg path {
+.block-04 .block-04-card-quiz .card-quiz-answer:hover .card-quiz-arrow-and-number .arrow-quiz svg path {
   fill: white;
 }
-.block-04 .block-04-card-quiz .active .number-quiz {
+.block-04 .block-04-card-quiz .card-quiz-answer:hover .number-quiz {
   color: #FFFFFF !important;
 }
 .block-04 .block-04-card-quiz .active:hover {
@@ -1358,7 +1376,7 @@ h1 {
 .block-06 .block-folders .folder-1 .folder-1-title-2 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1378,7 +1396,7 @@ h1 {
 .block-06 .block-folders .folder-1 .folder-1-title-1 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1408,7 +1426,7 @@ h1 {
 .block-06 .block-folders .folder-2 .folder-2-title-1 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1428,7 +1446,7 @@ h1 {
 .block-06 .block-folders .folder-2 .folder-2-title-2 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1449,7 +1467,7 @@ h1 {
 .block-06 .block-folders .folder-2 .folder-2-title-3 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1494,7 +1512,7 @@ h1 {
 .block-06 .block-folders .folder-3 .folder-3-title-1 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1515,7 +1533,7 @@ h1 {
 .block-06 .block-folders .folder-3 .folder-3-title-2 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1536,7 +1554,7 @@ h1 {
 .block-06 .block-folders .folder-3 .folder-3-title-3 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1557,7 +1575,7 @@ h1 {
 .block-06 .block-folders .folder-3 .folder-3-title-4 p {
   font-family: "Golos Text";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: #000000;
@@ -1575,10 +1593,10 @@ h1 {
   top: -80px;
 }
 .block-06 .folder-1:hover .folder-1-title-1 {
-  top: -220px;
+  top: -240px;
 }
 .block-06 .folder-1:hover .folder-1-title-2 {
-  top: -130px;
+  top: -100px;
 }
 .block-06 .slider-2 {
   margin-bottom: 10px;
@@ -1982,54 +2000,16 @@ h1 {
 .slider-5 .slider-5-navigation div .swiper-button-prev-5::after {
   content: url(../img/slider-button-next.png);
 }
-.slider-6 {
-  margin-bottom: 66px;
-  overflow: hidden;
-}
-.slider-6 .slider-6-navigation {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 30px 0px 0px;
-  position: absolute;
-  position: relative;
-  bottom: 80px;
-  z-index: 1;
-}
-.slider-6 .slider-6-navigation .swiper-pagination-6 {
-  padding: 0px 0px 0px 70px;
-}
-.slider-6 .slider-6-navigation .swiper-pagination-6 .swiper-pagination-bullet {
-  border: 1px solid white;
-  background-color: white;
-}
-.slider-6 .slider-6-navigation div {
-  width: 110px;
-  display: flex;
-  justify-content: space-between;
-}
-.slider-6 .slider-6-navigation div .swiper-button-prev-6 {
-  position: static;
-}
-.slider-6 .slider-6-navigation div .swiper-button-prev-6::after {
-  content: url(../img/slider-6-arrow-prev.png);
-}
-.slider-6 .slider-6-navigation div .swiper-button-next-6 {
-  position: static;
-}
-.slider-6 .slider-6-navigation div .swiper-button-next-6::after {
-  content: url(../img/slider-6-arrow-next.png);
-}
-.slider-6 .swiper-wrapper .swiper-slide {
+.slider-6-block {
   background: url(../img/slider-6-1.png);
   background-repeat: no-repeat no-repeat;
   height: 570px;
   width: 100%;
   border-radius: 75px;
   background-position: right;
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 66px;
 }
-.slider-6 .swiper-wrapper .swiper-slide .slide-6-left .slide-6-sub-title {
+.slider-6-block .slide-6-sub-title {
   font-family: "Golos Text";
   font-style: normal;
   font-weight: 400;
@@ -2040,7 +2020,7 @@ h1 {
   margin-top: 60px;
   margin-bottom: 12px;
 }
-.slider-6 .swiper-wrapper .swiper-slide .slide-6-left .slide-6-title {
+.slider-6-block .slide-6-title {
   font-family: "Golos Text";
   font-style: normal;
   font-weight: 600;
@@ -2050,14 +2030,14 @@ h1 {
   margin: 0;
   margin-bottom: 100px;
 }
-.slider-6 .swiper-wrapper .swiper-slide .slide-6-left .slide-6-coment {
+.slider-6-block .slide-6-coment {
   background: #FFFFFF;
   padding: 22px 20px 22px 30px;
   border-radius: 20px;
   max-width: 427px;
   margin: 0px 0px 0px 23px;
 }
-.slider-6 .swiper-wrapper .swiper-slide .slide-6-left .slide-6-coment p {
+.slider-6-block .slide-6-coment p {
   font-family: "Golos Text";
   font-style: normal;
   font-weight: 400;
@@ -2065,16 +2045,38 @@ h1 {
   line-height: 135%;
   color: #212121;
 }
-.slider-6 .swiper-wrapper .swiper-slide .slide-6-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  padding: 0px 30px 30px 0px;
+.slider-6-block .slider-6 {
+  overflow: hidden;
 }
-.slider-6 .swiper-wrapper .swiper-slide .slide-6-right .slider-6-navigation {
+.slider-6-block .slider-6 .slider-6-navigation {
   display: flex;
   justify-content: space-between;
-  width: 110px;
+  margin-top: 10px;
+}
+.slider-6-block .slider-6 .swiper-pagination-6 {
+  padding: 0px 0px 0px 60px;
+}
+.slider-6-block .slider-6 .swiper-pagination-bullet {
+  border: 1px solid white;
+  background-color: white;
+}
+.slider-6-block .slider-6 .btns-navigation-6 {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px 0px 0px;
+}
+.slider-6-block .slider-6 .btns-navigation-6 .swiper-button-prev-6 {
+  position: static;
+}
+.slider-6-block .slider-6 .btns-navigation-6 .swiper-button-prev-6::after {
+  content: url(../img/slider-6-arrow-prev.png);
+}
+.slider-6-block .slider-6 .btns-navigation-6 .swiper-button-next-6 {
+  position: static;
+}
+.slider-6-block .slider-6 .btns-navigation-6 .swiper-button-next-6::after {
+  content: url(../img/slider-6-arrow-next.png);
 }
 
 .footer {
