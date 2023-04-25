@@ -1510,6 +1510,7 @@ h1 {
   height: 224px;
   top: -30px;
   transition: 0.3s;
+  width: -webkit-fill-available;
 }
 .block-06 .block-folders .folder-3 .folder-3-title-2 p {
   font-family: "Golos Text";
