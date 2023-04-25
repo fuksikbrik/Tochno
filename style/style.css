@@ -1148,13 +1148,20 @@ h1 {
   line-height: 135%;
   text-transform: uppercase;
   color: white;
+  transition: 0.3s;
 }
 .block-05 .block-05-accordeon-price .accordeon .accordeon-item p {
   margin: 0;
 }
+.block-05 .block-05-accordeon-price .accordeon .accordeon-item:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
 .block-05 .block-05-accordeon-price .accordeon .active {
   background: white;
   color: #212121;
+}
+.block-05 .block-05-accordeon-price .accordeon .active:hover {
+  background: white;
 }
 .block-05 .block-05-accordeon-price .accordeon-answer {
   max-width: 460px;
@@ -1270,6 +1277,10 @@ h1 {
   line-height: 135%;
   text-align: center;
   color: #212121;
+  transition: 0.3s;
+}
+.block-calculator .calculator .quiz-cards .card:hover {
+  background: #f1b355;
 }
 .block-calculator .calculator .quiz-cards .active {
   background-color: #FFA216;
