@@ -627,6 +627,7 @@ h1{
                     border-radius: 20px;
                     max-width: 360px;
                     padding: 22px 20px 22px 30px;
+                    margin: 0px 0px 0px 23px;
                     p{
                         font-family: 'Golos Text';
                         font-style: normal;
@@ -643,30 +644,49 @@ h1{
                 flex-direction: column;
                 justify-content: end;
                 
-                .slider-7-navigation{
-                    display: flex;
-                    justify-content: space-between;
-                    width: 90px;
-                    padding: 0px 30px 30px 0px;
-                    .swiper-button-prev{
-                        position: static !important;
-                    }
-                    .swiper-button-prev::after{
-                        content: url(../img/slider-1-prev.png);
-                    }
-                    .swiper-button-next{
-                        position: static !important;
-                    }
-                    .swiper-button-next::after{
-                        content: url(../img/slider-1-next.png);
-                    }
-                }
+                
                 
             }
            
         }
         .disabled{
             display: none;
+        }
+    }
+    .slider-7-navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        position: relative;
+        padding: 0px 30px 30px 0px;
+        bottom: 83px;
+        z-index: 1;
+        .btns-swiper{
+            width: 110px;
+            display: flex;
+            justify-content: space-between;
+            .swiper-button-prev-7{
+               
+            }
+            .swiper-button-prev-7::after{
+                content: url(../img/slider-1-prev.png);
+            }
+            .swiper-button-next-7{
+                position: static !important;
+            }
+            .swiper-button-next-7::after{
+                content: url(../img/slider-1-next.png);
+            }
+        }
+        .swiper-pagination-7{
+            display: flex;
+            position: relative;
+            bottom: 44px;
+            padding: 0px 0px 0px 50px;
+            .swiper-pagination-bullet{
+                background-color: white;
+                border: 1px solid white;
+            }
         }
     }
 }
@@ -996,36 +1016,54 @@ h1{
         }
         .slider-1{
             margin-bottom: 10px;
-            max-height: 570px;
+            
             overflow: hidden;
-
-            .swiper-wrapper{
-                .slider-1-navigation{
+            .slider-1-navigation{
+                display: flex;
+                justify-content: end;
+                position: relative;
+                top: 80px;
+                z-index: 2;
+                right: 30px;
+                div{
+                    width: 110px;
                     display: flex;
-                    justify-content: end;
-                    div{
-                        
-                        display: flex;
-                        justify-content: space-between;
-                       
-                        .swiper-button-prev-1{
-                            width: 50px;
-                        }
-                        .swiper-button-next-1::after{
-                           
-                            content: url(../img/slider-1-next.png);
-                           
-                        }
-                        .swiper-button-next-1{
-                            width: 50px;
-                        }
-                        .swiper-button-prev-1::after{
-                            
-                            content: url(../img/slider-1-prev.png);
-                        }
+                    justify-content: space-between;
+                   
+                    .swiper-button-prev-1{
+                        width: 50px;
                     }
                     
+                    .swiper-button-next-1::after{
+                       
+                        content: url(../img/slider-1-next.png);
+                       
+                    }
+                    .swiper-button-next-1{
+                        width: 50px;
+                    }
+                    .swiper-button-prev-1::after{
+                        
+                        content: url(../img/slider-1-prev.png);
+                    }
                 }
+                
+            }
+
+            .pagination-1{
+                position: relative;
+                z-index: 2;
+                padding: 0px 0px 0px 90px;
+                bottom: 100px;
+                .swiper-pagination-1{
+                    .swiper-pagination-bullet{
+                        background-color: white;
+                        border: 1px solid white;
+                    }
+                }
+            }
+            .swiper-wrapper{
+                
                 .swiper-slide{
                     background-image: url(../img/slider-1-1.png);
                     background-repeat: no-repeat no-repeat;
@@ -1033,6 +1071,7 @@ h1{
                     border-radius: 50px;
                     max-width: 950px;
                     height: 490px;
+                    
                     display: flex;
                     justify-content: space-between;
                     padding: 50px 30px 30px 90px;
@@ -1073,6 +1112,7 @@ h1{
                             display: flex;
                             justify-content: space-between;
                             max-width: 417px;
+                            
                             .object-characteristic-card{
                                 display: flex;
                                 flex-direction: column;
@@ -1103,7 +1143,7 @@ h1{
                     .slide-01-right{
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
+                        justify-content: end;
                         button{
                             background: rgba(255, 255, 255, 0.01);
                             border: 1px solid #FFFFFF;
@@ -1364,6 +1404,7 @@ h1{
             }
             .active{
                 background-color: #FFA216;
+                border: none;
             }
         }
         .quiz-btns{
@@ -1415,7 +1456,259 @@ h1{
     .block-folders{
         display: flex;
         gap: 10px;
+        .folder-1{
+            z-index: 3;
+            position: sticky;
+            transition: 0.3s;
+            .folder-image-1{
+                z-index: 3;
+                position: relative;
+            }
+            .folder-1-title-2{
+                position: absolute;
+                background: #FFFFFF;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                margin-left: 10px;
+                z-index: 2;
+                height: 224px;
+                top: -10px;
+                transition: 0.3s;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;                    
+                }
+            }
+            .folder-1-title-1{
+                position: absolute;
+                background: #EDEDED;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                margin-left: 10px;
+                z-index: 1;
+                height: 224px;
+                top: -20px;
+                transition: 0.3s;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;
+                }
+            }
+        }
+        .folder-2{
+            position: sticky;
+            
+            transition: 0.3s;
+            .folder-image-2{
+                z-index: 4;
+                position: relative;
+            }
+            .folder-2-title-1{
+                position: absolute;
+                background: #DCDCDC;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                margin-left: 10px;
+                z-index: 1;
+                height: 224px;
+                top: -30px;
+                transition: 0.3s;
+                width: -webkit-fill-available;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;
+                }
+            }
+            .folder-2-title-2{
+                position: absolute;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                background: #EDEDED;
+                margin-left: 10px;
+                z-index: 2;
+                height: 224px;
+                top: -20px;
+                transition: 0.3s;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;                    
+                }
+            }
+            .folder-2-title-3{
+                position: absolute;
+                background: #FFFFFF;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                margin-left: 10px;
+                z-index: 3;
+                height: 224px;
+                top: -10px;
+                transition: 0.3s;
+                width: -webkit-fill-available;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;
+                }
+            }
+        }
+        .folder-2:hover{
+            .folder-2-title-1{
+                top:-300px ;
+            }
+            .folder-2-title-2{
+                top: -200px;
+            }
+            .folder-2-title-3{
+                top: -100px;
+            }
+        }
+        .folder-3{
+            position: sticky;
+            z-index: 3;
+            position: sticky;
+            transition: 0.3s;
+            .folder-image-3{
+                z-index: 5;
+                position: relative;
+            }
+            
+            .folder-image-3{
+                z-index: 5;
+                position: relative;
+            }
+            .folder-3-title-1{
+                position: absolute;
+                background: #C5C5C5;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                margin-left: 10px;
+                z-index: 1;
+                height: 224px;
+                top: -40px;
+                transition: 0.3s;
+                width: -webkit-fill-available;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;
+                }
+            }
+            .folder-3-title-2{
+                position: absolute;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                background: #DCDCDC;
+                margin-left: 10px;
+                z-index: 2;
+                height: 224px;
+                top: -30px;
+                transition: 0.3s;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;                    
+                }
+            }
+            .folder-3-title-3{
+                position: absolute;
+                background: #EDEDED;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                margin-left: 10px;
+                z-index: 3;
+                height: 224px;
+                top: -20px;
+                transition: 0.3s;
+                width: -webkit-fill-available;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;
+                }
+            }
+            .folder-3-title-4{
+                position: absolute;
+                background: white;
+                border-radius: 30px;
+                padding: 24px 30px 0px 30px;
+                max-width: 270px;
+                margin-left: 10px;
+                z-index: 4;
+                height: 224px;
+                top: -10px;
+                transition: 0.3s;
+                width: -webkit-fill-available;
+                p{
+                    font-family: 'Golos Text';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #000000;
+                }
+            }
+        }
+        .folder-3:hover{
+            .folder-3-title-1{
+                top: -360px;
+            }
+            .folder-3-title-2{
+                top: -260px;
+            }
+            .folder-3-title-3{
+                top: -170px;
+            }
+            .folder-3-title-4{
+                top: -80px;
+            }
+            
+        }
 
+    }
+    .folder-1:hover{
+        .folder-1-title-1{
+            top: -220px;
+        }
+        .folder-1-title-2{
+            top: -130px;
+        }
     }
     .slider-2{
         margin-bottom: 10px;
@@ -1424,6 +1717,12 @@ h1{
             width: 110px;
             display: flex;
             justify-content: space-between;
+            position: relative;
+            bottom: 130px;
+            
+            padding: 1px 0px 0px 140px;
+            z-index: 2;
+        
             .swiper-button-prev-2{
 
             }
@@ -1471,10 +1770,9 @@ h1{
                     background: #FFFFFF;
                     border: 1px solid #212121;
                     border-radius: 30px;
-                    padding: 50px 0px 30px 50px;
+                    padding: 50px 0px 100px 50px;
                     max-height: 170px;
                     display: flex;
-                    flex-direction: column;
                     justify-content: space-between;
                     p{
                         font-family: 'Golos Text';
@@ -1485,6 +1783,27 @@ h1{
                         color: #212121;
                         width: 60%;
                         
+                    }
+                    .human-1{
+                        max-height: 516px;
+                        bottom: 0px;
+                        max-width: 359px;
+                        position: absolute;
+                        left: 680px;
+                    }
+                    .human-2{
+                        max-width: 382px;
+                        max-height: 506px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 672px;
+                    }
+                    .human-3{
+                        max-width: 506px;
+                        max-height: 478px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 563px;
                     }
                 }
             }
@@ -1689,13 +2008,11 @@ h1{
     }
 }
 .slider-4{
+        overflow: hidden;
     margin-bottom: 50px;
-    overflow: hidden;
+    
     .title-and-arrow{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-bottom: 50px;
+        
         .slider-4-title{
             font-family: 'Golos Text';
             font-style: normal;
@@ -1706,40 +2023,39 @@ h1{
             padding: 0px 0px 0px 90px; 
             margin: 0;    
         }
-        .slider-4-navigation{
-            div{
-                width: 110px;
-                display: flex;
-                justify-content: space-between;
-                .swiper-button-next-4{
-                    position: static !important;
-                    
-                    width: 50px;
-                    height: 50px;
-                    
-                }
-                .swiper-button-next-4::after{
-                    content: url(../img/slider-button-next.png);
-                    
-                }
-                .swiper-button-prev-4{
-                    position: static !important;
-                    
-                    width: 50px;
-                    height: 50px;
-                    transform: rotate(180deg);
-                }
-                .swiper-button-prev-4::after{
-                    content: url(../img/slider-button-next.png);
-                   
-                }
+        
+    }
+    .slider-4-navigation{
+        display: flex;
+        justify-content: end;
+        position: relative;
+        top: -55px;
+        div{
+            width: 110px;
+            display: flex;
+            justify-content: space-between;
+            .swiper-button-next-4{
+                position: static !important;
+                width: 50px;
+                height: 50px;
+            }
+            .swiper-button-next-4::after{
+                content: url(../img/slider-button-next.png);
+            }
+            .swiper-button-prev-4{
+                position: static !important;
+                width: 50px;
+                height: 50px;
+                transform: rotate(180deg);
+            }
+            .swiper-button-prev-4::after{
+                content: url(../img/slider-button-next.png);
             }
         }
     }
     
     .swiper-wrapper{
-        overflow: hidden;
-       
+      
         .swiper-slide{
             max-width: 294px;
             padding: 30px 26px 50px 30px;

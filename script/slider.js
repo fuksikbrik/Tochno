@@ -19,6 +19,7 @@
   const sliderThwo = new Swiper('.slider-2', {
     slidesPerView: 1,
     spaceBetween: 10,
+    loop:true,
       navigation: {
         nextEl: '.swiper-button-next-2',
         prevEl: '.swiper-button-prev-2',
@@ -27,6 +28,7 @@
   const sliderOne = new Swiper('.slider-1', {
     slidesPerView: 1,
     spaceBetween: 10,
+    loop:true,
       navigation: {
         nextEl: '.swiper-button-next-1',
         prevEl: '.swiper-button-prev-1',
@@ -41,8 +43,8 @@
     spaceBetween: 10,
     loop:true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next-7',
+      prevEl: '.swiper-button-prev-7',
     },
     pagination: {
       el: '.swiper-pagination-7',
