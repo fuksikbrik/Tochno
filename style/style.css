@@ -489,12 +489,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   height: 150px;
-  /*
-      .block-yelow-men{
-
-      }
-
-  */
 }
 .block-yelow .customer-call {
   display: flex;
@@ -2338,4 +2332,7 @@ h1 {
   .slider-4 .swiper-wrapper .swiper-slide {
     max-width: 417px !important;
   }
+}
+.customer-call {
+  max-width: none !important;
 }/*# sourceMappingURL=style.css.map */
