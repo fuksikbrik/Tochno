@@ -18,7 +18,7 @@
 
   const sliderThwo = new Swiper('.slider-2', {
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 300,
     loop:true,
       navigation: {
         nextEl: '.swiper-button-next-2',
