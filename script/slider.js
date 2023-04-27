@@ -4,7 +4,15 @@
       navigation: {
         nextEl: '.swiper-button-next-5',
         prevEl: '.swiper-button-prev-5',
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        700: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        }
       }
+      
   })
 
   const sliderFour = new Swiper('.slider-4', {
@@ -13,6 +21,17 @@
       navigation: {
         nextEl: '.swiper-button-next-4',
         prevEl: '.swiper-button-prev-4',
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        700: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        500: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        }
       }
   })
 
