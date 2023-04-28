@@ -10,6 +10,10 @@
         700: {
           slidesPerView: 2,
           spaceBetween: 20
+        },
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20
         }
       }
       
@@ -28,7 +32,7 @@
           slidesPerView: 2,
           spaceBetween: 20
         },
-        500: {
+        300: {
           slidesPerView: 1,
           spaceBetween: 20
         }
@@ -84,3 +88,17 @@
       type: 'bullets',
     },
   })
+
+  const slider10 = new Swiper('.slider-10', {
+    slidesPerView: 1,
+    spaceBetween: 300,
+    
+     
+  })
+  const accordeonMobile = new Swiper('.accordeon-mobile', {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    
+     
+  })
+  

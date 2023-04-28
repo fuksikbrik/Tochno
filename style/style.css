@@ -373,6 +373,9 @@ h1 {
   margin: 0;
   margin-bottom: 57px;
 }
+.block-01 .slider-10 {
+  display: none;
+}
 .block-01 .block-of-cards {
   display: flex;
   gap: 0px 10px;
@@ -1127,6 +1130,9 @@ h1 {
 .block-05 .block-05-cards .card .card-image-3 {
   max-width: 189px;
   margin: 0 auto;
+}
+.block-05 .accordeon {
+  display: none;
 }
 .block-05 .block-05-accordeon-price {
   display: flex;
@@ -2175,6 +2181,10 @@ h1 {
   margin: 0px 20px 0px 0px;
 }
 
+.footer-mobile {
+  display: none;
+}
+
 .slider-test .swiper-wrapper .slide {
   background-color: black;
   width: 350px;
@@ -2531,7 +2541,7 @@ h1 {
     padding: 50px 0px 0px 30px;
   }
   .block-05 .block-05-cards .card .card-image-2 {
-    top: 4px;
+    top: 11px;
     right: 70px;
   }
   .block-05 .block-05-cards .card-fixxed {
@@ -3137,6 +3147,7 @@ h1 {
   }
   .header-menu-block {
     height: 420px;
+    max-width: 284px;
   }
   .header-menu-block .header-menu-block-line-1 {
     gap: 20px;
@@ -3163,8 +3174,9 @@ h1 {
   .header-page .girl-purple {
     width: 303px !important;
     height: 458px !important;
-    left: -122px;
-    top: -173px !important;
+    position: absolute !important;
+    left: 51px !important;
+    top: 317px !important;
   }
   .header-page .header-block-purple {
     padding: 180px 20px 20px 20px;
@@ -3174,11 +3186,21 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     max-height: none;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100% !important;
+    flex-direction: inherit;
   }
   .header-page .header-block-purple .block-purple-line-card .line-card {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 135%;
     padding: 10px;
+  }
+  .header-page .header-block-purple .block-purple-line-card .girl-purple {
+    position: absolute !important;
+    left: 51px !important;
+    top: 317px !important;
   }
   .block-01 .block-title .number {
     font-size: 22px;
@@ -3227,16 +3249,30 @@ h1 {
     display: none;
   }
   .slider-7 {
-    background-position: center;
+    background-position: top 45% right;
     background-size: 100%;
   }
   .slider-7 .slide-7-number-and-title {
-    margin-bottom: 0px !important;
-    margin-bottom: 195px !important;
+    margin-top: 20px !important;
+    margin-bottom: 210px !important;
+  }
+  .slider-7 .swiper-wrapper {
+    padding: 0px 0px 50px 0px;
+  }
+  .slider-7 .swiper-wrapper .swiper-slide {
+    margin-top: 50px;
   }
   .slider-7 .swiper-wrapper .swiper-slide .slide-7-coment {
-    width: 84.5%;
+    width: 88.5%;
     margin: 0;
+    padding: 18px;
+  }
+  .slider-7 .slider-7-navigation {
+    top: -440px;
+    padding: 0;
+  }
+  .slider-7 .slider-7-navigation .pagination {
+    padding: 0 !important;
   }
   .block-03 {
     margin-bottom: 30px !important;
@@ -3275,6 +3311,8 @@ h1 {
   }
   .block-03 .line-2 .block-03-four {
     padding: 40px 0px 73px 16px !important;
+    font-size: 14px;
+    line-height: 135%;
   }
   .block-03 .line-2 .block-03-five {
     padding: 16px 0px 14px 12px !important;
@@ -3383,12 +3421,14 @@ h1 {
   .block-05 .card-fixxed {
     padding: 16px 16px 16px 16px !important;
     display: flex;
+    height: 176px !important;
     justify-content: space-between;
   }
   .block-05 .card-fixxed .card-text {
     margin: 16px;
   }
   .block-05 .card-fixxed .card-image-2 {
+    top: 59px !important;
     right: 25px !important;
   }
   .block-05 .block-05-accordeon-price {
@@ -3396,9 +3436,33 @@ h1 {
     flex-direction: column;
     width: 100%;
   }
+  .block-05 .block-05-accordeon-price .accordeon-mobile {
+    display: block;
+    overflow: hidden;
+  }
+  .block-05 .block-05-accordeon-price .accordeon-mobile .swiper-wrapper .swiper-slide .accordeon-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 15px;
+  }
+  .block-05 .block-05-accordeon-price .accordeon-mobile .swiper-wrapper .swiper-slide .accordeon-item p {
+    font-family: "Golos Text";
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    line-height: 16px;
+    margin: 0;
+  }
+  .block-05 .block-05-accordeon-price .accordeon-mobile .swiper-wrapper .swiper-slide .active {
+    background-color: white;
+  }
+  .block-05 .block-05-accordeon-price .accordeon-mobile .swiper-wrapper .swiper-slide .active p {
+    color: #212121;
+  }
   .block-05 .block-05-accordeon-price .accordeon {
-    display: flex;
-    justify-content: start;
+    display: none;
   }
   .block-05 .block-05-accordeon-price .accordeon .accordeon-item {
     font-size: 12px !important;
@@ -3445,6 +3509,12 @@ h1 {
   .block-calculator .calculator .quiz-btns .btn {
     width: 120px !important;
     height: 44px !important;
+  }
+  .block-06 .block-folders .title-and-sub-title {
+    width: auto !important;
+  }
+  .block-06 .block-folders .folder-icon-arrow {
+    left: 260px;
   }
   .block-06 .block-folders .title-and-sub-title .title {
     font-size: 22px;
@@ -3498,6 +3568,7 @@ h1 {
   }
   .block-call-of-size {
     padding: 16px !important;
+    border-radius: 30px !important;
     display: flex;
     flex-direction: column-reverse;
     align-items: center !important;
@@ -3513,6 +3584,7 @@ h1 {
   .block-license-of-sertificate .licens-and-guarantee {
     display: flex;
     flex-direction: column;
+    margin-bottom: 600px;
   }
   .block-license-of-sertificate .licens-and-guarantee .licens-block .licens-text {
     padding: 32px 22px 32px 22px !important;
@@ -3532,12 +3604,219 @@ h1 {
     font-size: 12px !important;
     line-height: 135%;
   }
-  .block-license-of-sertificate .licens-and-guarantee .guarantee {
-    display: none;
+  .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-1 {
+    max-width: 252px;
+  }
+  .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-2 {
+    max-width: 252px;
+  }
+  .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-3 {
+    max-width: 252px;
   }
   .slider-4 .title-and-arrow .slider-4-title {
     padding: 0 !important;
     font-size: 22px !important;
     line-height: 135%;
+  }
+  .slider-4 .swiper-wrapper .swiper-slide {
+    max-width: 264px !important;
+  }
+  .slider-4 .slider-4-navigation {
+    top: -40px;
+    left: -10px;
+  }
+  .slider-4 .slider-4-navigation div {
+    width: 90px;
+    height: 40px;
+  }
+  .slider-4 .slider-4-navigation div .swiper-button-next-4 {
+    width: 40px;
+    height: 40px;
+  }
+  .slider-4 .slider-4-navigation div .swiper-button-next-4::after {
+    width: 40px;
+  }
+  .slider-4 .slider-4-navigation div .swiper-button-prev-4::after {
+    width: 40px;
+  }
+  .slider-4 .slider-4-navigation div .swiper-button-prev-4 {
+    width: 40px;
+    height: 50px;
+  }
+  .slider-6-block {
+    background-size: 100%;
+  }
+  .slider-6-block .slide-6-sub-title {
+    font-size: 12px;
+    line-height: 135%;
+  }
+  .slider-6-block .slide-6-title {
+    font-size: 22px;
+    line-height: 135%;
+  }
+  .slider-6-block .swiper-wrapper {
+    margin-top: 130px;
+  }
+  .slider-6-block .swiper-wrapper .swiper-slide .slide-6-coment {
+    padding: 16px;
+    width: 89%;
+    margin: 0;
+  }
+  .slider-6-block .swiper-wrapper .swiper-slide .slide-6-coment p {
+    font-size: 14px;
+    line-height: 135%;
+    margin: 0;
+  }
+  .slider-6-block .slider-6-navigation .swiper-pagination-6 {
+    padding: 0;
+  }
+  .slider-6-block .slider-6-navigation .btns-navigation-6 {
+    padding: 0px 10px 20px 0px;
+    width: 140px;
+  }
+  .slider-6-block .slider-6-navigation .btns-navigation-6 .swiper-button-next-6 {
+    width: 40px;
+    height: 40px;
+  }
+  .slider-6-block .slider-6-navigation .btns-navigation-6 .swiper-button-prev-6 {
+    width: 40px;
+    height: 40px;
+  }
+  .footer {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+    padding: 22px;
+    border-radius: 28px 28px 0px 0px;
+    background: #7939FF;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-mobile .logo-footer-mobile {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .footer-mobile .mobile-footer-right-title {
+    font-size: 16px;
+    line-height: 135%;
+    color: white;
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  .footer-mobile .mobile-footer-number {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: white;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .footer-mobile .mobile-footer-email {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 50px;
+  }
+  .footer-mobile .mobile-social-icon-and-licens {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .footer-mobile .mobile-social-icon-and-licens .mobile-social-icon {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-mobile .mobile-social-icon-and-licens .mobile-social-icon a svg {
+    opacity: 0.4;
+  }
+  .footer-mobile .mobile-social-icon-and-licens .mobile-licens {
+    display: flex;
+    justify-content: start;
+  }
+  .footer-mobile .mobile-social-icon-and-licens .mobile-licens p {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    margin: 0px 0px 0px 15px;
+    color: white;
+    opacity: 0.4;
+  }
+  .block-01 .block-of-cards {
+    display: none;
+  }
+  .block-01 .slider-10 {
+    overflow: hidden;
+    display: block;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .slide-size {
+    padding: 30px 16px 16px 16px;
+    width: 285px;
+    height: 448px;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .slide-size .step {
+    color: #8E8E8E;
+    padding: 10px;
+    background-color: white;
+    width: 16%;
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 135%;
+    border-radius: 10px;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .slide-size .slide-title {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 135%;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .slide-size .slide-sub-title {
+    font-family: "Golos Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .one {
+    border-radius: 28px;
+    background: white;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .thwo {
+    background: url(../img/mobile-slider-image-2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat no-repeat;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .thwo .slide-title {
+    color: white;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .thwo .slide-sub-title {
+    color: white;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .three {
+    background-color: white;
+    border-radius: 28px;
+  }
+  .block-01 .slider-10 .swiper-wrapper .swiper-slide .three .card-image-3-fix-mobile {
+    width: 80%;
+    margin: auto 0px;
+  }
+  * {
+    box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */
