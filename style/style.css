@@ -1131,9 +1131,6 @@ h1 {
   max-width: 189px;
   margin: 0 auto;
 }
-.block-05 .accordeon-mobile {
-  display: none;
-}
 .block-05 .block-05-accordeon-price {
   display: flex;
   gap: 10px;
@@ -1171,6 +1168,9 @@ h1 {
 }
 .block-05 .block-05-accordeon-price .accordeon .active:hover {
   background: white;
+}
+.block-05 .block-05-accordeon-price .accordeon-mobile {
+  display: none;
 }
 .block-05 .block-05-accordeon-price .accordeon-answer {
   max-width: 590px;
