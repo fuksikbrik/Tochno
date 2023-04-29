@@ -1,0 +1,59 @@
+.reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+.reveal.medium{
+    transition: 2s all ease;
+}
+.reveal.slow{
+    transition: 3s all ease;
+}
+
+.reveal.swipeLeft{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.swipeRight{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.swipeRight.slow{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.swipeRight.medium{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+.reveal.swipeTop.slow{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 2s all ease-in;
+}
+.reveal.swipeTop.medium{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 1.5s all ease-in;
+}
+.reveal.swipeTop{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 1s all ease-in;
+}
+
+
+
+
+
+
+
+
+.reveal.__fadein.reveal.__fadein.reveal.__fadein{
+    transform: translateY(0);
+    opacity: 1;
+}

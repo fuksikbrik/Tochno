@@ -1,13 +1,15 @@
  const sliderFive = new Swiper('.slider-5', {
-    slidesPerView: 3,
-    spaceBetween: 10,
       navigation: {
         nextEl: '.swiper-button-next-5',
         prevEl: '.swiper-button-prev-5',
       },
       breakpoints: {
         // when window width is >= 320px
-        700: {
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        676: {
           slidesPerView: 2,
           spaceBetween: 20
         },
@@ -27,8 +29,11 @@
         prevEl: '.swiper-button-prev-4',
       },
       breakpoints: {
-        // when window width is >= 320px
-        700: {
+        1200: {
+          slidessPerView: 3,
+          spaceBetween: 20
+        },
+        676: {
           slidesPerView: 2,
           spaceBetween: 20
         },
@@ -42,6 +47,8 @@
   const sliderThwo = new Swiper('.slider-2', {
     slidesPerView: 1,
     spaceBetween: 300,
+    speed: 500,
+    effect: 'fade',
     loop:true,
       navigation: {
         nextEl: '.swiper-button-next-2',
@@ -64,6 +71,8 @@
   const sliderSeven = new Swiper('.slider-7', {
     slidesPerView: 1,
     spaceBetween: 10,
+    speed: 500,
+    effect: 'fade',
     loop:true,
     navigation: {
       nextEl: '.swiper-button-next-7',
@@ -91,7 +100,7 @@
 
   const slider10 = new Swiper('.slider-10', {
     slidesPerView: 1,
-    spaceBetween: 300,
+    spaceBetween: 10,
     
      
   })

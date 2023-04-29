@@ -1,16 +1,11 @@
 body{
     padding: 0;
     margin: 0;
-      
-
-      img{
+    img{
         width: 100%;
         height: auto;
-      }
-      
-                  
+    }              
 }
-
 @font-face {
     font-weight: 400; 
     font-family:'Golos Text';
@@ -2545,6 +2540,7 @@ h1{
         }
     }
     .slider-4{
+        overflow: hidden;
         .swiper-wrapper{
             .swiper-slide{
                 max-width: 417px !important;
