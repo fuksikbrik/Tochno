@@ -1197,9 +1197,7 @@ h1{
             }
         }
     }
-    .accordeon-mobile{
-        display: none;
-    }
+    
     .block-05-accordeon-price{
         display: flex;
         gap: 10px;
@@ -1236,6 +1234,9 @@ h1{
             .active:hover{
                 background: white;
             }
+        }
+        .accordeon-mobile{
+            display: none;
         }
         .accordeon-answer{
             max-width: 590px;

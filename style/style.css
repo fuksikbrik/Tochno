@@ -1485,9 +1485,11 @@ h1 {
   margin: 0 auto;
 }
 
+
 .block-05 .accordeon-mobile {
   display: none;
 }
+
 
 .block-05 .block-05-accordeon-price {
   display: -webkit-box;
@@ -1542,6 +1544,11 @@ h1 {
   background: white;
 }
 
+
+
+.block-05 .block-05-accordeon-price .accordeon-mobile {
+  display: none;
+}
 .block-05 .block-05-accordeon-price .accordeon-answer {
   max-width: 590px;
   padding: 50px 0px 50px 60px;
