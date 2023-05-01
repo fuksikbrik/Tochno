@@ -420,7 +420,7 @@
                                 </div>
                                 <div class="slide-01-right">
 
-                                    <button>Смотреть проект</button>
+                                    <button id="popup-test">Смотреть проект</button>
                                 </div>
                             </div>
 
@@ -453,7 +453,7 @@
 
                                 
                                    
-                                    <button>Смотреть проект</button>
+                                    <button >Смотреть проект</button>
                                 </div>
                             </div>
 
@@ -561,6 +561,29 @@
 
 
 
+                    </div>
+                </div>
+
+                <div class="popup">
+                    <div class="popup-exit">
+                        <div class="popup-close">
+                            <svg width="30" height="30" viewBox="0 0 13 13" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.707031" width="16" height="1" transform="rotate(45 0.707031 0)" fill="white"/>
+                                <rect x="12.0208" y="0.707275" width="16" height="1" transform="rotate(135 12.0208 0.707275)" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="slider-11">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/slider-1-1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/slider-1-1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/slider-1-1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/slider-1-1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/slider-1-1.png" alt=""></div>
+                        </div>
+                        <div class="swiper-button-prev-11"></div>
+                        <div class="swiper-button-next-11"></div>
                     </div>
                 </div>
 
@@ -684,21 +707,12 @@
 
 
                 <div class="calculator">
-                    <p class="calculator-title">ТИП ПОМЕЩЕНИЯ</p>
-                    <div class="quiz-cards">
-                        <div class="card">
-                            <p>ДОМ</p>
-                        </div>
-                        <div class="card active">
-                            <p>КВАРТИРА</p>
-                        </div>
-                        <div class="card">
-                            <p>КОММЕРЧЕСКОЕ</p>
-                        </div>
-                        <div class="card">
-                            <p>ДРУГОЕ</p>
-                        </div>
+                  
+                    <div class="quiz-cards" id="quiz">
+                        
                     </div>
+                    <p class="answer-quiz-end">СПАСИБО ЗА ЗАЯВКУ! <br>  
+                        СКОРО НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ</p>
                     <div class="quiz-btns">
                         <button class="btn prev">Назад</button>
                         <button class="btn next">Далее</button>
@@ -1173,11 +1187,11 @@
     </div>
 
 
-
+    <script src="./script/calculator.js"></script>
     <script src="./script/anim.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/slider.js"></script>
-
+    <script src="./script/popup.js"></script>
 </body>
 
 </html>

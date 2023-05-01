@@ -1182,6 +1182,32 @@ h1 {
 .block-04 .card-quiz-answer:hover {
   background: #ffb94f;
 }
+.block-04 .popup{
+    width: 241vh;
+    
+    background: #212121;
+    position: fixed;
+    left: 6%;
+    top: 25%;
+    display: none;
+    z-index: 1000;
+    border-radius: 80px;
+    overflow: hidden;
+}
+.block-04 .popup-active{
+  display: block;
+}
+.block-04 .popup .popup-exit{
+  display: flex;
+  justify-content: end;
+  padding: 10px 100px 10px  10px;
+}
+.block-04 .popup .popup-exit svg{
+  fill: white;
+}
+.block-04 .popup .slider-11{
+  padding: 50px;
+}
 
 .block-04 .block-04-slider .block-04-slider-title {
   font-family: 'Golos Text';
@@ -1654,8 +1680,33 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 10px;
+}
+.block-calculator .calculator .answer-quiz-end {
+  display: none;
+  text-align: center;
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-size: 32px;
+  color: #7939FF;
+  font-weight: 600;
+}
+.block-calculator .calculator .active-answer-quiz{
+  display: block;
+}
+.block-calculator .calculator .quiz-cards .title-and-number{
+  width: 100%;
+}
+.block-calculator .calculator .quiz-cards .title-and-number h1 {
+  color: #212121;
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+  
 }
 
 .block-calculator .calculator .quiz-cards .card {
@@ -1668,11 +1719,9 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-height: 250px;
-  max-width: 250px;
   background: #FFFFFF;
   border: 1px solid #212121;
-  border-radius: 50px;
+  border-radius: 30px;
   margin: auto;
   width: -webkit-fill-available;
   height: 220px;
@@ -1685,7 +1734,44 @@ h1 {
   color: #212121;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 23.5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
+.block-calculator .calculator .quiz-cards div{
+  width: 100%;
+  
+}
+.block-calculator .calculator .quiz-cards div input{
+  width: 100%;
+  border: 1px solid black;
+  text-align: center;
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-size: 96px;
+  border-radius: 50px;
+  padding: 40px 0;
+}
+.block-calculator .calculator .quiz-cards .card span{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.block-calculator .calculator .quiz-cards .card:hover > div{
+  max-height: 100px;
+  opacity: 1;
+}
+.block-calculator .calculator .quiz-cards .card div{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+
+
 
 .block-calculator .calculator .quiz-cards .card:hover {
   background: #f1b355;
@@ -1719,6 +1805,15 @@ h1 {
   text-align: center;
   color: #212121;
 }
+
+.block-calculator .calculator .quiz-btns .prev:disabled{
+  opacity: 0.4;
+}
+
+.block-calculator .calculator .quiz-btns .next:disabled{
+  opacity: 0.4;
+}
+
 
 .block-06 .block-folders {
   display: -webkit-box;
@@ -3916,6 +4011,7 @@ h1 {
 .block-calculator .calculator .quiz-cards .card {
   border-radius: 30px;
   max-height: 110px !important;
+  width: 22.5%;
 }
 .block-06 .block-folders .folder-width{
   width: 48.9%;

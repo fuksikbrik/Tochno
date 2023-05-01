@@ -110,4 +110,14 @@
     
      
   })
+
+  const slider11 = new Swiper('.slider-11', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop:true,
+    navigation: {
+      nextEl: '.swiper-button-next-11',
+      prevEl: '.swiper-button-prev-11',
+    }
+  })
   
