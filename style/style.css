@@ -1183,16 +1183,19 @@ h1 {
   background: #ffb94f;
 }
 .block-04 .popup{
-    width: 241vh;
     
+    border: 5px solid white;
     background: #212121;
     position: fixed;
     left: 6%;
-    top: 25%;
+    top: 3%;
+    right: 6%;
+    bottom: 3%;
     display: none;
     z-index: 1000;
     border-radius: 80px;
     overflow: hidden;
+    padding: 0px 0px 5% 0px;
 }
 .block-04 .popup-active{
   display: block;
@@ -1200,11 +1203,10 @@ h1 {
 .block-04 .popup .popup-exit{
   display: flex;
   justify-content: end;
-  padding: 10px 100px 10px  10px;
+  padding: 10px 2% 0px  10px;
 }
-.block-04 .popup .popup-exit svg{
-  fill: white;
-}
+/* .block-04 .popup .popup-exit svg{
+} */
 .block-04 .popup .slider-11{
   padding: 50px;
 }
@@ -1853,7 +1855,7 @@ h1 {
 }
 
 .block-06 .block-folders .folder-width {
-  width: 31.8%;
+  width: 32.8%;
 }
 
 .block-06 .block-folders .folder-icon-arrow {
@@ -2649,6 +2651,82 @@ h1 {
           text-decoration-line: underline;
   color: #7939FF;
   margin: 0;
+}
+
+
+
+
+
+.slider-4  .swiper-coment {
+  /* max-width: 335px; */
+  padding: 30px 26px 50px 30px;
+  background: #FFFFFF;
+  border-radius: 50px;
+}
+
+.slider-4 .swiper-coment .slide-4-image {
+  max-width: 150px;
+}
+
+.slider-4  .swiper-coment .slide-4-name {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 135%;
+  color: #212121;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.slider-4 .swiper-coment .slide-4-id {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #212121;
+  opacity: 0.2;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.slider-4  .swiper-coment .slide-4-comment {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: #919191;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.slider-4  .swiper-coment .slide-4-next {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #7939FF;
+  margin: 0;
+}
+.slider-4  .swiper-coment .img-and-close-coment{
+  display: flex;
+  justify-content: space-between;
+}
+.slider-4 .popup-coment{
+  position: fixed;
+  top: 13%;
+  display: none;
+  max-width: 480px;
+  z-index: 100;
+  left: 36%;
+}
+.slider-4 .popup-coment-active{
+  display: block;
 }
 
 .slider-5 {

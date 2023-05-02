@@ -114,10 +114,46 @@
   const slider11 = new Swiper('.slider-11', {
     slidesPerView: 1,
     spaceBetween: 10,
-    loop:true,
+    
     navigation: {
       nextEl: '.swiper-button-next-11',
       prevEl: '.swiper-button-prev-11',
+    }
+  })
+  const slider12 = new Swiper('.slider-12', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    
+    navigation: {
+      nextEl: '.swiper-button-next-12',
+      prevEl: '.swiper-button-prev-12',
+    }
+  })
+  const slider13 = new Swiper('.slider-13', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    
+    navigation: {
+      nextEl: '.swiper-button-next-13',
+      prevEl: '.swiper-button-prev-13',
+    }
+  })
+  const slider14 = new Swiper('.slider-14', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    
+    navigation: {
+      nextEl: '.swiper-button-next-14',
+      prevEl: '.swiper-button-prev-14',
+    }
+  })
+  const slider15 = new Swiper('.slider-15', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    
+    navigation: {
+      nextEl: '.swiper-button-next-15',
+      prevEl: '.swiper-button-prev-15',
     }
   })
   
