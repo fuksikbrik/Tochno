@@ -1207,18 +1207,20 @@ opacity: 0.7;
 }
 .block-04 .popup{
     
-    border: 5px solid white;
+    border: 2px solid white;
     background: #212121;
     position: fixed;
-    left: 6%;
-    top: 3%;
-    right: 6%;
-    bottom: 3%;
+    top: 0;
+    left: 2%;
+    right: 10%;
+    bottom: 1%;
     display: none;
     z-index: 1000;
-    border-radius: 80px;
+    border-radius: 50px;
     overflow: hidden;
-    padding: 0px 0px 5% 0px;
+    padding: 0px 20px 10px 20px;
+    width: 95%;
+    height: max-content;
 }
 .block-04 .popup-active{
   display: block;
@@ -1228,10 +1230,9 @@ opacity: 0.7;
   justify-content: end;
   padding: 10px 2% 0px  10px;
 }
-/* .block-04 .popup .popup-exit svg{
-} */
+ 
 .block-04 .popup .slider-11{
-  padding: 50px;
+  padding: 0px 0px 50px 0px;
 }
 
 .block-04 .block-04-slider .block-04-slider-title {
@@ -2851,6 +2852,36 @@ opacity: 0.7;
     position: absolute;
     top: 0;
     padding: 20px;
+}
+.slider-5 .popup-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+ 
+  background-color: #212121;
+  border: 5px solid white;
+  border-radius: 50px;
+  z-index: 1000;
+  display: none;
+  padding: 20px;
+  width: -webkit-fill-available;
+}
+.slider-5 .popup-video-active{
+  display: block;
+}
+.slider-5 .popup-video .popup-video-close{
+  display: flex;
+  justify-content: end;
+}
+.slider-5 .popup-video div{
+  display: flex;
+  justify-content: center;
+}
+.slider-5 .popup-video video {
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 70%;
 }
 
 .slider-6-block {
@@ -5063,6 +5094,10 @@ opacity: 0.7;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .block-calculator .calculator .quiz-cards div input{
+    font-size: 40px;
+    padding: 20px 0;
+  }
   .block-04 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide .slide-01-left .title-object {
     font-size: 26px;
   }
@@ -5453,3 +5488,14 @@ opacity: 0.7;
 .slider-2.swiper-fade .swiper-slid-active {
   z-index: 3;
 }
+
+ @media screen and (max-width:500px){
+  .slider-4 .popup-coment{
+    position: fixed;
+    top: 0;
+    max-width: none;
+    z-index: 100;
+    left: 0;
+    margin-left: 0;
+  }
+} 

@@ -107,3 +107,49 @@ popupButtonComent4.addEventListener("click", function () {
 closeButtonComent4.addEventListener('click', function () {
     popupBlockComent4.classList.remove('popup-coment-active')
 })
+
+
+
+
+const popupSlideVideo1 = document.querySelector('.popup-slide-video-1');
+const popupSlideVideo2 = document.querySelector('.popup-slide-video-2');
+const popupSlideVideo3 = document.querySelector('.popup-slide-video-3');
+const popupSlideVideo4 = document.querySelector('.popup-slide-video-4');
+
+const popupVideo1 = document.querySelector('.video-1');
+const popupVideo2 = document.querySelector('.video-2');
+const popupVideo3 = document.querySelector('.video-3');
+const popupVideo4 = document.querySelector('.video-4');
+
+const popupVideoClose1 = document.querySelector('.popup-video-close-1')
+const popupVideoClose2 = document.querySelector('.popup-video-close-2')
+const popupVideoClose3 = document.querySelector('.popup-video-close-3')
+const popupVideoClose4 = document.querySelector('.popup-video-close-4')
+
+popupSlideVideo1.addEventListener('click', function () {
+    popupVideo1.classList.add('popup-video-active')
+})
+popupVideoClose1.addEventListener('click', function () {
+    popupVideo1.classList.remove('popup-video-active')
+})
+
+popupSlideVideo2.addEventListener('click', function () {
+    popupVideo2.classList.add('popup-video-active')
+})
+popupVideoClose2.addEventListener('click', function () {
+    popupVideo2.classList.remove('popup-video-active')
+})
+
+popupSlideVideo3.addEventListener('click', function () {
+    popupVideo3.classList.add('popup-video-active')
+})
+popupVideoClose3.addEventListener('click', function () {
+    popupVideo3.classList.remove('popup-video-active')
+})
+
+popupSlideVideo4.addEventListener('click', function () {
+    popupVideo4.classList.add('popup-video-active')
+})
+popupVideoClose4.addEventListener('click', function () {
+    popupVideo4.classList.remove('popup-video-active')
+})
