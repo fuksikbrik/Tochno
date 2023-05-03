@@ -4223,7 +4223,7 @@ opacity: 0.7;
   font-size: 80px;
 }
 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide {
-  max-width: 455px !important;
+  max-width: 360px !important;
 }
 .block-calculator .calculator .quiz-cards .card {
   border-radius: 30px;
@@ -5265,18 +5265,18 @@ opacity: 0.7;
   .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-1 {
     max-width: none;
     max-height: 210px;
-    width: -webkit-fill-available;
+    width: -webkit-fill-available !important;
   }
   .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-title {
     margin-bottom: 25px;
   }
   .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-2 {
     max-width: none;
-    width: -webkit-fill-available;
+    width: -webkit-fill-available !important;
   }
   .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-3 {
     max-width: none;
-    width: -webkit-fill-available;
+    width: -webkit-fill-available !important;
   }
   .slider-4 .title-and-arrow .slider-4-title {
     padding: 0 !important;
