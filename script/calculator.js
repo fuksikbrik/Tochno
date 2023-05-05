@@ -147,6 +147,7 @@ const showQuestion = (index) => {
   }
   else{
       const input = document.createElement("div")
+      
       input.innerHTML = questions[index].input;
       quizDiv.appendChild(input);
 
