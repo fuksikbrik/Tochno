@@ -4679,7 +4679,7 @@ opacity: 0.7;
   .block-04 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide{
     max-width: 625px !important;
     padding: 30px 16px 16px 16px !important;
-    background-image: url(/img/mobile-background.png);
+    background-image: url(/img/mobile-background.png) !important;
   }
   .block-06 .slider-2-block .slider-2 .swiper-wrapper .swiper-slide .slide-2-coment{
     border: 0;
