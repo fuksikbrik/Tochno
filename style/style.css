@@ -1724,7 +1724,13 @@ opacity: 0.7;
   gap: 10px;
   margin-bottom: 10px;
 }
-.block-calculator .calculator .answer-quiz-end {
+.block-calculator .calculator .quiz-cards  .home{
+  width: 48.5% !important;
+}
+.block-calculator .calculator .quiz-cards  .calc{
+  width: 48.5% !important;
+}
+.block-calculator .calculator .answer-quiz-end  {
   display: none;
   text-align: center;
   font-family: 'Golos Text';
@@ -3240,7 +3246,6 @@ opacity: 0.7;
   .calculator .quiz-cards .card {
     max-height: 311px !important;
     height: 311px !important;
-    max-width: 311px !important;
   }
   .block-folders .folder-1 .folder-image-1 {
     width: 473px;
@@ -4288,6 +4293,12 @@ opacity: 0.7;
 @media screen and (max-width: 640px) {
   .content .wrapper {
     max-width: 440px ;
+  }
+  .block-calculator .calculator .quiz-cards  .home{
+    width: 47.5% !important;
+  }
+  .block-calculator .calculator .quiz-cards  .calc{
+    width: 47.5% !important;
   }
   .slider-7 .swiper-wrapper .swiper-slide .slide-7-coment{
     padding: 8px;

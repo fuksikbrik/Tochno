@@ -149,8 +149,8 @@ const showQuestion = (index) => {
       const input = document.createElement("div")
       
       input.innerHTML = questions[index].input;
+      quizDiv.appendChild(question);
       quizDiv.appendChild(input);
-
       input.addEventListener("input", (e)=>{
           finalAnswers[index] = e.target.value;
           if(e.target.value) nextButton.disabled = false
