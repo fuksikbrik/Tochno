@@ -953,7 +953,7 @@ opacity: 0.7;
 
 .block-03 .line-2 .block-03-four {
   border-radius: 30px;
-  padding: 186px 0px 21% 30px;
+  padding: 18% 30px;
   background-image: url(../img/block-3-4.png);
   background-repeat: no-repeat no-repeat;
   max-height: 43px;
@@ -1208,11 +1208,11 @@ opacity: 0.7;
   background: #ffb94f;
 }
 .block-04 .popup{
-    
-    border: 2px solid white;
+    border: 1px solid #000;
     background: #212121;
     position: fixed;
-    top: 0;
+    top: 50%;
+    transform: translate(0, -50%);
     left: 2%;
     right: 10%;
     bottom: 1%;
@@ -1819,15 +1819,21 @@ opacity: 0.7;
 
 
 
-.block-calculator .calculator .quiz-cards .card:hover {
+/* .block-calculator .calculator .quiz-cards .card:hover {
   background: #f1b355;
-}
+} */
 
 .block-calculator .calculator .quiz-cards .active {
   background-color: #FFA216;
   border: none;
 }
-
+.block-calculator .calculator .quiz-cards .card.calc:hover {
+  background-color: #FFF;
+}
+.block-calculator .calculator .quiz-cards .card.calc.active {
+  background-color: #FFF;
+  border: 1px solid #000;
+}
 .block-calculator .calculator .quiz-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2730,11 +2736,12 @@ opacity: 0.7;
 
 
 
-.slider-4  .swiper-coment {
+.slider-4 .swiper-coment {
   /* max-width: 335px; */
   padding: 30px 26px 50px 30px;
   background: #FFFFFF;
   border-radius: 50px;
+  max-height: 100vh;
 }
 
 .slider-4 .swiper-coment .slide-4-image {
@@ -2773,6 +2780,7 @@ opacity: 0.7;
   color: #919191;
   margin: 0;
   margin-bottom: 20px;
+  overflow: auto;
 }
 
 .slider-4  .swiper-coment .slide-4-next {
@@ -2862,12 +2870,11 @@ opacity: 0.7;
 }
 .slider-5 .popup-video{
   position: fixed;
-  top: 0;
+  top: 50%;
+  transform: translate(0, -50%);
   left: 0;
-  
- 
   background-color: #212121;
-  border: 5px solid white;
+  border: 1px solid #000;
   border-radius: 50px;
   z-index: 1000;
   display: none;
@@ -2888,7 +2895,7 @@ opacity: 0.7;
 .slider-5 .popup-video video {
   border-radius: 20px;
   margin-top: 20px;
-  width: 70%;
+  width: 100%;
 }
 
 .slider-6-block {
@@ -3808,7 +3815,7 @@ opacity: 0.7;
   .block-03 .block-03-one .title-and-sub-title .title {
     font-size: 32px;
     line-height: 135%;
-    margin: 0;
+    /* margin: 0; */
   }
   .block-03 .block-03-one .title-and-sub-title .sub-title {
     font-size: 14px;
@@ -4231,7 +4238,7 @@ opacity: 0.7;
 }
 .block-calculator .calculator .quiz-cards .card {
   border-radius: 30px;
-  max-height: 110px !important;
+  max-height: 140px !important;
   width: 22.5%;
 }
 .block-06 .block-folders .folder-width{
@@ -4295,10 +4302,10 @@ opacity: 0.7;
     max-width: 440px ;
   }
   .block-calculator .calculator .quiz-cards  .home{
-    width: 47.5% !important;
+    width: 100% !important;
   }
   .block-calculator .calculator .quiz-cards  .calc{
-    width: 47.5% !important;
+    width: 100% !important;
   }
   .slider-7 .swiper-wrapper .swiper-slide .slide-7-coment{
     padding: 8px;
@@ -4364,9 +4371,21 @@ opacity: 0.7;
   width: 42px;
   height: 42px;
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 20px 0px 0px 0px;
+  top: 15px;
+  right: 15px;
+  animation: rotate 2s infinite;
+
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
 }
 .block-01 .slider-10 .swiper-wrapper .swiper-slide .thwo {
   background: url(../img/mobile-slider-image-2.png);
@@ -4599,9 +4618,11 @@ opacity: 0.7;
   width: 170px;
 }
 .block-05 .block-05-cards .card .card-image-2{
-    top: 58px;
-    right: 28px;
-    bottom: 0px;
+    top: auto !important;
+    right: auto;
+    bottom: auto;
+    display: flex;
+    align-items: flex-end;
 }
 .block-06 .block-folders .folder-1 .folder-1-title-1{
   max-width: 350px !important;
@@ -4658,7 +4679,7 @@ opacity: 0.7;
 }
 .block-06 .block-call-of-size .call-of-size-left{
   max-width: none;
-  width: 80%;
+  width: 100%;
   align-items: center;
 }
 .block-call-of-size{
@@ -4699,8 +4720,11 @@ opacity: 0.7;
   .block-license-of-sertificate .licens-and-guarantee .guarantee{
     position: sticky;
   }
+  .block-05 .block-05-cards .card {
+    border-radius: 20px;
+  }
   .block-06 .block-call-of-size .call-of-size-left .call-of-size-left-title{
-    font-size: 10px;
+    font-size: 12px;
   }
   .slider-7 .swiper-wrapper .swiper-slide .slide-7-coment p{
     font-size: 10px;
@@ -4712,6 +4736,15 @@ opacity: 0.7;
     height: auto;
     max-width: 95%;
     z-index: 999;
+  }
+  .slider-7 .slide-7-number-and-title .title-and-sub-title .title {
+    font-size: 22px;
+  }
+  .block-04 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide .slide-01-left .object-characteristic .object-characteristic-card .card-title {
+    font-size: 12px;
+  }
+  .block-04 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide .slide-01-left .object-characteristic .object-characteristic-card .card-sub-title {
+    font-size: 14px;
   }
   .header-menu-block .header-menu-block-line-1 {
     gap: 20px;
@@ -4733,6 +4766,7 @@ opacity: 0.7;
   }
   .header-page .header-block-white {
     padding: 72px 0px 100px 20px;
+    border-radius: 28px;
   }
   .header-page .header-block-white p {
     width: 80%;
@@ -4752,6 +4786,7 @@ opacity: 0.7;
   .header-page .header-block-purple {
     padding: 100px 20px 20px 20px;
     position: relative;
+    border-radius: 28px;
   }
   .header-page .header-block-purple .block-purple-line-card {
     z-index: 2;
@@ -4793,6 +4828,7 @@ opacity: 0.7;
   .block-01 .block-title p {
     font-size: 12px;
     line-height: 135%;
+    max-width: 60%;
   }
   .block-01 .block-of-cards .card {
     -webkit-box-orient: vertical;
@@ -4843,18 +4879,19 @@ opacity: 0.7;
     display: none;
   }
   .slider-7 {
-    background-position: top 45% right;
+    background-position: top 55% right;
     background-size: 100%;
+    margin-bottom: 50px;
   }
   .slider-7 .slide-7-number-and-title {
     margin-top: 20px !important;
-    margin-bottom: 210px !important;
+    margin-bottom: 240px !important;
   }
   .slider-7 .swiper-wrapper {
     padding: 0px 0px 50px 0px;
   }
   .slider-7 .swiper-wrapper .swiper-slide {
-    margin-top: 35px;
+    margin-top: 60px;
   }
   .slider-7 .swiper-wrapper .swiper-slide .slide-7-coment {
     width: 100%;
@@ -4862,7 +4899,7 @@ opacity: 0.7;
     padding: 18px;
   }
   .slider-7 .slider-7-navigation {
-    top: -475px;
+    top: -465px;
     padding: 0;
     display: flex;
     align-items: center;
@@ -4874,7 +4911,8 @@ opacity: 0.7;
     margin-bottom: 30px !important;
   }
   .block-03 .block-03-one {
-    padding: 26px 0px 16px 16px;
+    padding: 26px 16px;
+    border-radius: 20px;
   }
   .block-03 .block-03-one .number {
     font-size: 22px;
@@ -4891,6 +4929,7 @@ opacity: 0.7;
   .block-03 .block-03-thwo {
     padding: 15px 0px 12px 15px;
     width: 48%;
+    border-radius: 20px;
   }
   .block-03 .block-03-thwo p {
     font-size: 12px;
@@ -4902,6 +4941,7 @@ opacity: 0.7;
   .block-03 .block-03-three {
     padding: 31px 15px 67px 15px;
     width: 48%;
+    border-radius: 20px;
     height: unset;
   }
   .block-03 .line-2 .block-03-six {
@@ -4915,10 +4955,12 @@ opacity: 0.7;
     padding:88px 0px 90px 16px !important;
     font-size: 14px;
     line-height: 135%;
+    border-radius: 20px;
   }
   .block-03 .line-2 .block-03-five {
     padding: 16px 0px 14px 12px !important;
-    width: 44.9%;
+    width: 48%;
+    border-radius: 20px;
   }
   .block-03 .line-2 .block-03-five p {
     font-size: 12px;
@@ -4926,7 +4968,8 @@ opacity: 0.7;
   }
   .block-03 .line-2 .block-03-six {
     padding: 96px 24px 26px 12px !important;
-    width: 50%;
+    width: 48%;
+    border-radius: 20px;
   }
   .block-03 .line-2 .block-03-six p {
     font-size: 12px;
@@ -4949,6 +4992,7 @@ opacity: 0.7;
   }
   .block-04 .block-04-card-quiz .card-quiz-answer {
     width: 100%;
+    border-radius: 20px;
   }
   .block-04 .block-04-card-quiz .card-quiz-answer-six {
     width: 100%;
@@ -4966,6 +5010,7 @@ opacity: 0.7;
   .block-04-slider .block-04-slider-title {
     font-size: 18px !important;
     line-height: 135% !important;
+    max-width: 70%;
   }
   .block-04-slider .slider-1 .swiper-wrapper .swipper-slide {
     padding: 30px 0px 0px 16px;
@@ -5011,6 +5056,11 @@ opacity: 0.7;
   .block-06 .slider-2-block .slide-2-title {
     position: relative;
     z-index: 5;
+  }
+  .block-06 .slider-2-block {
+    background-position: unset;
+    height: auto;
+    border-radius: 28px;
   }
   .block-05 {
     padding: 35px 22px 22px 22px;
@@ -5106,6 +5156,7 @@ opacity: 0.7;
   }
   .block-05 .block-05-accordeon-price .accordeon-answer {
     width: 100% !important;
+    border-radius: 20px;
   }
   .block-05 .block-05-accordeon-price .accordeon-answer .accordeon-title {
     font-size: 20px !important;
@@ -5122,10 +5173,12 @@ opacity: 0.7;
   .block-calculator .title-and-sub-title .sub-title {
     font-size: 12px !important;
     line-height: 135%;
-    width: 100% !important;
+    width: 75% !important;
   }
   .block-calculator .calculator {
     padding: 20px;
+    height: 460px;
+    border-radius: 28px;
   }
   .block-calculator .calculator .calculator-title {
     font-size: 18px;
@@ -5144,10 +5197,11 @@ opacity: 0.7;
   }
   .block-calculator .calculator .quiz-cards div input{
     font-size: 40px;
+    height: 275px;
     padding: 20px 0;
   }
   .block-04 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide .slide-01-left .title-object {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 20px;
   }
   .block-04-slider .slider-1 .swiper-wrapper .swiper-slide .slide-01-left .addres-object{
@@ -5159,6 +5213,7 @@ opacity: 0.7;
     justify-content: end;
     flex-direction: inherit;
     width: 100%;
+    align-items: end;
   }
   .block-04 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide .slide-01-left {
     width: 100%;
@@ -5174,7 +5229,11 @@ opacity: 0.7;
   .block-04 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide {
     flex-wrap: wrap;
     padding: 50px 30px 50px;
-    height: auto !important;
+    height: 450px !important;
+    border-radius: 28px;
+  }
+  .block-05 {
+    border-radius: 28px;
   }
   .slider-1 .pagination-1 {
     bottom: 55px !important;
@@ -5184,8 +5243,11 @@ opacity: 0.7;
   }
   .block-calculator .calculator .quiz-cards .card {
     border-radius: 20px;
-    width: 45%;
-    height: 128px !important;
+    width: 48%;
+    height: 140px !important;
+  }
+  .card.view span {
+    display: none;
   }
   .block-calculator .calculator .quiz-btns .btn {
     width: 120px !important;
@@ -5204,6 +5266,7 @@ opacity: 0.7;
   .block-06 .block-folders .title-and-sub-title .sub-title {
     font-size: 12px;
     line-height: 135%;
+    max-width: 65%;
   }
   .block-06 .block-folders .folder-width {
     width: 100%;
@@ -5230,20 +5293,20 @@ opacity: 0.7;
   .slider-2-block .swiper-wrapper .swiper-slide .slide-2-coment .human-1 {
     width: 370px !important;
     height: 530px !important;
-    left: -55px !important;
-    top: -219px !important;
+    left: -30px !important;
+    top: -170px !important;
   }
   .slider-2-block .swiper-wrapper .swiper-slide .slide-2-coment .human-2 {
     width: 382px !important;
     height: 506px !important;
-    left: -37px !important;
-    top: -213px !important;
+    left: -30px !important;
+    top: -160px !important;
   }
   .slider-2-block .swiper-wrapper .swiper-slide .slide-2-coment .human-3 {
     width: 506px !important;
     height: 528px !important;
-    left: -106px !important;
-    top: -213px !important;
+    left: -100px !important;
+    top: -130px !important;
   }
   .slider-2-block .slider-2-navigation {
     padding: 30px 0px 0px 10px !important;
@@ -5283,6 +5346,7 @@ opacity: 0.7;
   .block-license-of-sertificate .licens-and-guarantee .licens-block .licens-text {
     padding: 32px 22px 32px 22px !important;
     width: 100%;
+    border-radius: 20px;
   }
   .block-license-of-sertificate .licens-and-guarantee .licens-block .licens-text .licens-text-title {
     font-size: 18px !important;
@@ -5294,6 +5358,7 @@ opacity: 0.7;
   }
   .block-license-of-sertificate .licens-and-guarantee .licens-block .licens-cards .licens-card {
     padding: 20px 0px;
+    border-radius: 20px;
   }
   .block-license-of-sertificate .licens-and-guarantee .licens-block .licens-cards .licens-card .licens-card-title {
     font-size: 12px !important;
@@ -5321,6 +5386,7 @@ opacity: 0.7;
     line-height: 135%;
   }
   .slider-4 .swiper-wrapper .swiper-slide {
+    border-radius: 28px;
   }
   .slider-4 .slider-4-navigation {
     top: -40px;
@@ -5344,6 +5410,9 @@ opacity: 0.7;
     width: 40px;
     height: 50px;
   }
+  .slider-5 .swiper-slide {
+    border-radius: 28px;
+  }
   .slider-6-block {
     background-size: 100%;
   }
@@ -5356,7 +5425,10 @@ opacity: 0.7;
     line-height: 135%;
   }
   .slider-6-block .swiper-wrapper {
-    margin-top: 60%;
+    margin-top: 55%;
+  }
+  .block-calculator .calculator .quiz-cards .title-and-number h1 {
+    margin-bottom: 15px;
   }
   .slider-6-block .swiper-wrapper .swiper-slide .slide-6-coment {
     padding: 16px;
@@ -5564,3 +5636,13 @@ opacity: 0.7;
     margin-left: 0;
   }
 } 
+
+
+.fogging.__active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 99;
+  opacity: 0.5;
+}

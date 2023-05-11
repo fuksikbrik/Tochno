@@ -18,44 +18,54 @@ const popupClose5 = document.querySelector('.popup-close-5')
 
 
 
-
+const foggin = document.querySelector('.fogging')
 
 
 
 
 popup1.addEventListener('click', function () {
     popupWindow1.classList.add('popup-active');
+    foggin.classList.add('__active')
 })
 popupClose1.addEventListener('click', function (){
     popupWindow1.classList.remove('popup-active');
+    foggin.classList.remove('__active')
 })
 
 popup2.addEventListener('click', function () {
     popupWindow2.classList.add('popup-active');
+    foggin.classList.add('__active')
 })
 popupClose2.addEventListener('click', function (){
     popupWindow2.classList.remove('popup-active');
+    foggin.classList.remove('__active')
 })
 
 popup3.addEventListener('click', function () {
     popupWindow3.classList.add('popup-active');
+    foggin.classList.add('__active')
 })
 popupClose3.addEventListener('click', function (){
     popupWindow3.classList.remove('popup-active');
+    foggin.classList.remove('__active')
 })
 
 popup4.addEventListener('click', function () {
     popupWindow4.classList.add('popup-active');
+    foggin.classList.add('__active')
 })
 popupClose4.addEventListener('click', function (){
     popupWindow4.classList.remove('popup-active');
+    foggin.classList.remove('__active')
 })
 
 popup5.addEventListener('click', function () {
     popupWindow5.classList.add('popup-active');
+    foggin.classList.add('__active')
 })
 popupClose5.addEventListener('click', function (){
     popupWindow5.classList.remove('popup-active');
+    foggin.classList.remove('__active')
 })
 
 
@@ -82,30 +92,38 @@ const popupBlockComent4 = document.querySelector(".popup-coment-block-4")
 
 popupButtonComent1.addEventListener("click", function () {
     popupBlockComent1.classList.add('popup-coment-active');
+    foggin.classList.add('__active')
 })
 closeButtonComent1.addEventListener('click', function () {
     popupBlockComent1.classList.remove('popup-coment-active')
+    foggin.classList.remove('__active')
 })
 
 popupButtonComent2.addEventListener("click", function () {
     popupBlockComent2.classList.add('popup-coment-active');
+    foggin.classList.add('__active')
 })
 closeButtonComent2.addEventListener('click', function () {
     popupBlockComent2.classList.remove('popup-coment-active')
+    foggin.classList.remove('__active')
 })
 
 popupButtonComent3.addEventListener("click", function () {
     popupBlockComent3.classList.add('popup-coment-active');
+    foggin.classList.add('__active')
 })
 closeButtonComent3.addEventListener('click', function () {
     popupBlockComent3.classList.remove('popup-coment-active')
+    foggin.classList.remove('__active')
 })
 
 popupButtonComent4.addEventListener("click", function () {
     popupBlockComent4.classList.add('popup-coment-active');
+    foggin.classList.add('__active')
 })
 closeButtonComent4.addEventListener('click', function () {
     popupBlockComent4.classList.remove('popup-coment-active')
+    foggin.classList.remove('__active')
 })
 
 
@@ -128,28 +146,36 @@ const popupVideoClose4 = document.querySelector('.popup-video-close-4')
 
 popupSlideVideo1.addEventListener('click', function () {
     popupVideo1.classList.add('popup-video-active')
+    foggin.classList.add('__active')
 })
 popupVideoClose1.addEventListener('click', function () {
     popupVideo1.classList.remove('popup-video-active')
+    foggin.classList.remove('__active')
 })
 
 popupSlideVideo2.addEventListener('click', function () {
     popupVideo2.classList.add('popup-video-active')
+    foggin.classList.add('__active')
 })
 popupVideoClose2.addEventListener('click', function () {
     popupVideo2.classList.remove('popup-video-active')
+    foggin.classList.remove('__active')
 })
 
 popupSlideVideo3.addEventListener('click', function () {
     popupVideo3.classList.add('popup-video-active')
+    foggin.classList.add('__active')
 })
 popupVideoClose3.addEventListener('click', function () {
     popupVideo3.classList.remove('popup-video-active')
+    foggin.classList.remove('__active')
 })
 
 popupSlideVideo4.addEventListener('click', function () {
     popupVideo4.classList.add('popup-video-active')
+    foggin.classList.add('__active')
 })
 popupVideoClose4.addEventListener('click', function () {
     popupVideo4.classList.remove('popup-video-active')
+    foggin.classList.remove('__active')
 })
