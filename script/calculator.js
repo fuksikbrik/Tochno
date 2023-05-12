@@ -62,7 +62,7 @@ const questions = [
         question:"УКАЖИТЕ НОМЕР ТЕЛЕФОНА",
         lvl: 'tel',
         isInput: true,
-        input: '<input type="tel" max="11" min="10" placeholder="+7">'
+        input: '<input type="tel" max="11" min="10" placeholder="+7" required class="tel" data-phone-pattern> '
     }    
 
 ];
@@ -83,7 +83,7 @@ let prevButton = document.querySelector(".prev");
 let nextButton = document.querySelector(".next");
 let answerQuiz = document.querySelector(".answer-quiz-end");
 let workingDate = [10, 20];
-let saleCount = '3%';
+let saleCount = 0;
 nextButton.disabled = true
 prevButton.disabled = true
 
@@ -192,8 +192,29 @@ const start = () => {
         }, 500);
 
     }
-    // if (indexQuestion == 6) {
-    // }
+    if (indexQuestion == 6) {
+        setTimeout(() => {
+            valuePhone()
+            
+        }, 200);
+
+        const oldPrev = document.querySelector('.btn.prev')
+        const newCheck = document.createElement('div')
+        newCheck.style.fontFamily = 'Golos Text'
+        newCheck.style.display = 'flex'
+        newCheck.style.alignItems = 'center'
+        newCheck.innerHTML = `
+        <input type="checkbox" style="
+        border-radius: 39px;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    "><p>Согласен с обработкой <a href="" style="color: #14BDBD;" target="_blank"> персональных данных</a></p>`
+        oldPrev.replaceWith(newCheck)
+        nextButton.innerHTML = 'Рассчитать стоимость'
+        nextButton.style.width = '40%'
+        nextButton.classList.add('finalbtn')
+    }
 	prevButton.disabled = false
 	
 	if(indexQuestion == questions.length ){
@@ -266,7 +287,7 @@ nextButton.addEventListener('click', function (){
 	console.log(finalAnswers)
 })
 
-
+// УЖАС (НЕ СМОТРЕТЬ)
 function calculate (obj) {
     type = obj[0]
     view = obj[1]
@@ -274,16 +295,17 @@ function calculate (obj) {
     meth = obj[3]
     pres = obj[4]
 
-    // if (view == 4) {
-
-    // }
     if(build == 1) {
         if(type == 4) {
             workingDate[0] = workingDate[0] - 10
         }
+        if(view === 1){saleCount = 2990}
+        if(view === 2){saleCount = 2990}
+        if(view === 1){saleCount = 5490}
         if(view == 4) {
             workingDate[0] = workingDate[0] + 4
             workingDate[1] = workingDate[1] + 4
+            saleCount = 9900
             if(meth > 20) {
                 workingDate[0] = workingDate[0] + ((meth - 20) * 2)
                 workingDate[1] = workingDate[1] + ((meth - 20) * 2)
@@ -303,7 +325,11 @@ function calculate (obj) {
         if(type == 4) {
             workingDate[0] = workingDate[0] - 10
         }
+        if(view === 1){saleCount = 2990}
+        if(view === 2){saleCount = 2990}
+        if(view === 1){saleCount = 5490}
         if(view == 4) {
+            saleCount = 9900
             workingDate[0] = workingDate[0] + 4
             workingDate[1] = workingDate[1] + 4
             if(meth > 20) {
@@ -318,4 +344,43 @@ function calculate (obj) {
             workingDate[1] = workingDate[1] + (meth - 20)
         }
     }
+}
+// УЖАС ЗАКОНЧИЛСЯ
+
+
+
+function valuePhone () {
+    console.log()
+        let tel = document.querySelector('.tel')
+        var keyCode;
+        function mask(event) {
+            event.keyCode && (keyCode = event.keyCode);
+            var pos = this.selectionStart;
+            if (pos < 3) event.preventDefault();
+            var matrix = "+7 (___) ___ ____",
+                i = 0,
+                def = matrix.replace(/\D/g, ""),
+                val = this.value.replace(/\D/g, ""),
+                new_value = matrix.replace(/[_\d]/g, function(a) {
+                    return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+                });
+            i = new_value.indexOf("_");
+            if (i != -1) {
+                i < 5 && (i = 3);
+                new_value = new_value.slice(0, i)
+            }
+            var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+                function(a) {
+                    return "\\d{1," + a.length + "}"
+                }).replace(/[+()]/g, "\\$&");
+            reg = new RegExp("^" + reg + "$");
+            if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+            if (event.type == "blur" && this.value.length < 5)  this.value = ""
+        }
+    
+        tel.addEventListener("input", mask, false);
+        tel.addEventListener("focus", mask, false);
+        tel.addEventListener("blur", mask, false);
+        tel.addEventListener("keydown", mask, false)
+    
 }
