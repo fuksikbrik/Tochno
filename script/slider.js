@@ -105,7 +105,7 @@
      
   })
   const accordeonMobile = new Swiper('.accordeon-mobile', {
-    slidesPerView: 1.2,
+    slidesPerView: 'auto',
     spaceBetween: 10,
     
      

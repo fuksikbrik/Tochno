@@ -2863,6 +2863,9 @@ opacity: 0.7;
 .slider-5 .slider-5-navigation div .swiper-button-prev-5::after {
   content: url(../img/coment-prev.svg);
 }
+.slider-5 .slider-5-navigation {
+  margin-bottom: 35px;
+}
 .slider-5 .swiper-wrapper .swiper-slide .slider-5-play{
     position: absolute;
     top: 0;
@@ -3760,7 +3763,7 @@ opacity: 0.7;
     max-height: 88px;
   }
   .block-yelow .customer-call h1 {
-    font-size: 12px;
+    font-size: 16px;
     width: 80%;
   }
   .block-yelow .customer-call button img {
@@ -4373,18 +4376,18 @@ opacity: 0.7;
   position: absolute;
   top: 15px;
   right: 15px;
-  animation: rotate 2s infinite;
+  animation: rotate 2s reverse infinite;
 
 }
 @keyframes rotate {
   0% {
-    transform: rotate(20deg);
+    transform: translate(0);
   }
   50% {
-    transform: rotate(0);
+    transform: translate(-10px);
   }
   100% {
-    transform: rotate(20deg);
+    transform: translate(0);
   }
 }
 .block-01 .slider-10 .swiper-wrapper .swiper-slide .thwo {
@@ -4737,8 +4740,14 @@ opacity: 0.7;
     max-width: 95%;
     z-index: 999;
   }
+  .block-03 .line-2 .block-03-four p {
+    max-width: 40%;
+  }
   .slider-7 .slide-7-number-and-title .title-and-sub-title .title {
     font-size: 22px;
+  }
+  .block-04 {
+    margin: 70px 0 0;
   }
   .block-04 .block-04-slider .slider-1 .swiper-wrapper .swiper-slide .slide-01-left .object-characteristic .object-characteristic-card .card-title {
     font-size: 12px;
@@ -4769,7 +4778,7 @@ opacity: 0.7;
     border-radius: 28px;
   }
   .header-page .header-block-white p {
-    width: 80%;
+    width: 90%;
   }
   .header-page .header-block-white img {
     width: 80%;
@@ -4879,13 +4888,14 @@ opacity: 0.7;
     display: none;
   }
   .slider-7 {
-    background-position: top 55% right;
+    background-position: top 45% right;
     background-size: 100%;
     margin-bottom: 50px;
+    height: 650px;
   }
   .slider-7 .slide-7-number-and-title {
-    margin-top: 20px !important;
-    margin-bottom: 240px !important;
+    margin-top: 70px !important;
+    margin-bottom: 250px !important;
   }
   .slider-7 .swiper-wrapper {
     padding: 0px 0px 50px 0px;
@@ -4899,7 +4909,7 @@ opacity: 0.7;
     padding: 18px;
   }
   .slider-7 .slider-7-navigation {
-    top: -465px;
+    top: -550px;
     padding: 0;
     display: flex;
     align-items: center;
@@ -4913,6 +4923,7 @@ opacity: 0.7;
   .block-03 .block-03-one {
     padding: 26px 16px;
     border-radius: 20px;
+    order: 0;
   }
   .block-03 .block-03-one .number {
     font-size: 22px;
@@ -4930,6 +4941,7 @@ opacity: 0.7;
     padding: 15px 0px 12px 15px;
     width: 48%;
     border-radius: 20px;
+    order: 2;
   }
   .block-03 .block-03-thwo p {
     font-size: 12px;
@@ -4943,6 +4955,10 @@ opacity: 0.7;
     width: 48%;
     border-radius: 20px;
     height: unset;
+    order: 1;
+  }
+  .block-03 .line-2 {
+    order: 3;
   }
   .block-03 .line-2 .block-03-six {
     height: auto;
@@ -4967,7 +4983,7 @@ opacity: 0.7;
     line-height: 135%;
   }
   .block-03 .line-2 .block-03-six {
-    padding: 96px 24px 26px 12px !important;
+    padding: 125px 24px 26px 12px !important;
     width: 48%;
     border-radius: 20px;
   }
@@ -4988,7 +5004,7 @@ opacity: 0.7;
     line-height: 135%;
   }
   .block-04 .block-04-card-quiz {
-    margin-bottom: 50px !important;
+    margin-bottom: 70px !important;
   }
   .block-04 .block-04-card-quiz .card-quiz-answer {
     width: 100%;
@@ -5011,6 +5027,7 @@ opacity: 0.7;
     font-size: 18px !important;
     line-height: 135% !important;
     max-width: 70%;
+    margin-bottom: 0 !important;
   }
   .block-04-slider .slider-1 .swiper-wrapper .swipper-slide {
     padding: 30px 0px 0px 16px;
@@ -5130,6 +5147,9 @@ opacity: 0.7;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     padding: 15px;
+  }
+  .block-05 .block-05-accordeon-price .accordeon-mobile .swiper-wrapper .swiper-slide  {
+    width: fit-content;
   }
   .block-05 .block-05-accordeon-price .accordeon-mobile .swiper-wrapper .swiper-slide .accordeon-item p {
     font-family: 'Golos Text';
@@ -5267,9 +5287,13 @@ opacity: 0.7;
     font-size: 12px;
     line-height: 135%;
     max-width: 65%;
+    margin-bottom: 40px;
   }
   .block-06 .block-folders .folder-width {
     width: 100%;
+  }
+  .block-license-of-sertificate .block-title-and-sub-title .title {
+    margin-bottom: 20px;
   }
   .slider-2-block {
     padding: 22px !important;
@@ -5324,6 +5348,7 @@ opacity: 0.7;
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
+            margin-bottom: 70px !important;
   }
   .block-license-of-sertificate .sub-title {
     font-size: 12px;
@@ -5341,7 +5366,7 @@ opacity: 0.7;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 600px;
+    margin-bottom: 460px;
   }
   .block-license-of-sertificate .licens-and-guarantee .licens-block .licens-text {
     padding: 32px 22px 32px 22px !important;
@@ -5367,6 +5392,7 @@ opacity: 0.7;
   .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-1 {
     max-width: none;
     max-height: 210px;
+    padding: 30px;
     width: -webkit-fill-available !important;
   }
   .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-title {
@@ -5375,6 +5401,14 @@ opacity: 0.7;
   .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-2 {
     max-width: none;
     width: -webkit-fill-available !important;
+    padding: 30px;
+  }
+  .block-license-of-sertificate .guarantee .guarantee-2 {
+    margin-top: 80px !important;
+  }
+  .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-3 {
+    margin-top: 170px !important;
+    padding: 30px !important;
   }
   .block-license-of-sertificate .licens-and-guarantee .guarantee .guarantee-3 {
     max-width: none;
@@ -5436,9 +5470,12 @@ opacity: 0.7;
     margin: 0;
   }
   .slider-6-block .swiper-wrapper .swiper-slide .slide-6-coment p {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 135%;
     margin: 0;
+  }
+  .slider-6-block .slider-6 .slider-6-navigation {
+    margin-top: 25px;
   }
   .slider-6-block .slider-6-navigation .swiper-pagination-6 {
     padding: 0;
@@ -5567,6 +5604,7 @@ opacity: 0.7;
     color: #8E8E8E;
     padding: 10px;
     background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     display: inline;
     font-family: 'Golos Text';
     font-style: normal;
